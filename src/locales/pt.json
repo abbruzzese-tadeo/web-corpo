@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "siteName": "Further Corporate",
+    "home": {
+      "title": "Professional Language Training for Global Success | Further Corporate",
+      "description": "Customized corporate language programs delivering measurable results through proven methodologies and expert instruction."
+    }
+  },
+
+  "common": {
+    "brand": "Further Corporate",
+    "cta": {
+      "contact": "Contact",
+      "learnMore": "Learn More",
+      "subscribe": "Subscribe",
+      "send": "Send"
+    },
+    "buttons": {
+      "requestConsultation": "Request Consultation",
+      "watchOverview": "Watch Overview",
+      "requestProposal": "Request Proposal",
+      "scheduleCall": "Schedule Call"
+    },
+    "forms": {
+      "emailPlaceholder": "you@company.com",
+      "invalidEmail": "Please enter a valid email address.",
+      "thanks": "Thanks! Please check your inbox to confirm.",
+      "error": "Something went wrong. Please try again.",
+      "sending": "Sending..."
+    }
+  },
+
+  "nav": {
+    "about": "About",
+    "corporate": {
+      "_": "Corporate",
+      "training": "Training",
+      "academy": "Further Academy",
+      "firstClass": "First Class Learning",
+      "furthermore": "Furthermore",
+      "tefl": "TEFL"
+    },
+    "school": "School",
+    "furtherMedia": {
+      "_": "Further Media",
+      "records": "Further Records",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    },
+    "news": "News"
+  },
+
+   "footer": {
+    "newsletterTitle": "Newsletter",
+    "newsletterCopy": "Subscribe for updates on programs, resources, and case studies.",
+    "brandCopy": "Language consultancy for companies and individuals — onsite, online, or blended. CEFR-ready placement and measurable outcomes.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookies"
+    },
+    "copyright": "All rights reserved.",
+    "columns": {
+      "services": "Services",
+      "company": "Company",
+      "resources": "Resources"
+    },
+    "a11y": {
+      "newsletterDesc": "Enter your email to subscribe to the newsletter.",
+      "emailLabel": "Email"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "badge": "Leading Language Solutions Since 1998",
+      "title": {
+        "prefix": "Professional Language Training for",
+        "highlight": "Global Success"
+      },
+      "description": "Customized corporate language programs delivering measurable results through proven methodologies and expert instruction.",
+      "imageAlt": "Professional business meeting",
+      "pills": {
+        "projects": { "title": "5.5K+", "subtitle": "innovative projects completed worldwide" },
+        "clients":  { "title": "10K+",  "subtitle": "happy clients enjoying success" }
+      },
+      "metrics": {
+        "yearsExperience": "Years Experience",
+        "corporateClients": "Corporate Clients",
+        "studentsTrained": "Students Trained",
+        "mobile": { "years": "Years", "clients": "Clients", "students": "Students" }
+      }
+    },
+
+    "stats": {
+      "yearsInBusiness": { "value": 25, "label": "Years in Business" },
+      "corporatePartners": { "value": 50, "label": "Corporate Partners" },
+      "corporateStudents": { "value": 3000, "label": "Corporate Students" },
+      "privateStudents": { "value": 500, "label": "Private Students" }
+    },
+
+    "services": {
+      "title": "Professional Language Solutions",
+      "intro": "Comprehensive programs designed to meet the diverse needs of modern organizations and professionals.",
+      "cards": [
+        {
+          "title": "Corporate Training",
+          "description": "Comprehensive B2B language programs designed for professional teams with flexible delivery options.",
+          "features": ["Onsite classes", "Online sessions", "Blended learning", "Custom schedules"]
+        },
+        {
+          "title": "Executive Programs",
+          "description": "Premium one-on-one language coaching in curated environments for senior professionals.",
+          "features": ["Private instruction", "Flexible locations", "Personalized curriculum", "Premium materials"]
+        },
+        {
+          "title": "International Certification",
+          "description": "Professional preparation for Cambridge, TOEFL, and other recognized language certifications.",
+          "features": ["Exam strategies", "Practice tests", "Score guarantees", "Expert instructors"]
+        },
+        {
+          "title": "Digital Learning",
+          "description": "Self-paced asynchronous courses and multimedia resources for independent learners.",
+          "features": ["24/7 access", "Interactive content", "Progress tracking", "Mobile compatible"]
+        }
+      ]
+    },
+
+    "methodology": {
+      "title": "Proven Methodology, Measurable Results",
+      "intro": "Our approach combines internationally recognized frameworks with innovative teaching methods to deliver consistent, measurable outcomes.",
+      "bullets": [
+        {
+          "title": "CEFR-Based Assessment",
+          "text": "Transparent placement and progress tracking aligned with Common European Framework standards."
+        },
+        {
+          "title": "Performance Metrics",
+          "text": "Regular assessments and detailed reporting to track competency development and ROI."
+        },
+        {
+          "title": "Practical Application",
+          "text": "Real-world scenarios and business-focused content to ensure immediate workplace application."
+        }
+      ],
+      "imageAlt": "Professional training session"
+    },
+
+    "testimonials": {
+      "title": "Client Success Stories",
+      "subtitle": "Trusted by leading organizations across industries",
+      "items": [
+        {
+          "quote": "Further's corporate program transformed our team's ability to communicate with international clients. The ROI was evident within the first quarter.",
+          "name": "María González",
+          "role": "HR Director",
+          "company": "Tech Solutions SA"
+        },
+        {
+          "quote": "Professional, structured, and results-driven. The customized curriculum addressed our specific industry needs perfectly.",
+          "name": "Carlos Rodríguez",
+          "role": "Training Manager",
+          "company": "Global Industries"
+        },
+        {
+          "quote": "The flexibility and quality of instruction exceeded our expectations. Our executives now conduct international meetings with confidence.",
+          "name": "Laura Martínez",
+          "role": "CEO",
+          "company": "Innovation Group"
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "Ready to Elevate Your Team's Language Skills?",
+      "subtitle": "Contact us today to discuss a customized language training solution for your organization."
+    }
+
+
+  },
+
+  "about": {
+    "meta": {
+      "title": "About Us | Further Corporate",
+      "description": "Professional language services since 1997. Nearly 30 years delivering measurable impact for companies and individuals."
+    },
+    "hero": {
+      "badge": "Since 1997",
+      "title": "About Further Corporate",
+      "subtitle": "Nearly 30 Years of Experience",
+      "description": "We provide professional language services that go beyond traditional classes. From B2B training to in-person coaching and multimedia resources, our programs are designed to create measurable impact.",
+      "imageAlt": "Further team working on language programs",
+      "caption": "Professional language services since 1997.",
+      "primaryCta": { "label": "Contact Us", "href": "/contacto" },
+      "secondaryCta": { "label": "Discover Further Media", "href": "#media" }
+    },
+    "intro": {
+      "heading": "Professional Language Services Since 1997",
+      "subheading": "Learning languages today is a powerful, career-defining tool.",
+      "paragraphs": [
+        "We offer more than language classes. We design customized programs for companies and individuals, aligned with business goals and measurable outcomes.",
+        "Our approach blends international standards (CEFR) with modern, data-informed teaching to ensure real progress and confidence in professional settings."
+      ]
+    },
+    "media": {
+      "title": "Discover Further Media",
+      "description": "Podcast, TikTok, and YouTube to practice vocabulary and learn curious facts in English.",
+      "links": [
+        { "label": "Podcast", "href": "/media/podcast", "aria": "Open Further Podcast" },
+        { "label": "TikTok", "href": "/media/tiktok", "aria": "Open TikTok channel" },
+        { "label": "YouTube", "href": "/media/youtube", "aria": "Open YouTube channel" }
+      ]
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "Real experiences from partners, HR leaders, teachers, and students",
+      "items": [
+        {
+          "quote": "Natalia brings out the best in everyone and ensures the school runs smoothly while caring for staff well-being. A pleasure to volunteer!",
+          "name": "Raymond",
+          "role": "Supply Chain Executive | Senior Product Manager — Optimization Technologies"
+        },
+        {
+          "quote": "Friendly, warm, and supportive atmosphere. I felt comfortable discussing lesson plans and strategies. Students improved, and so did I as a teacher.",
+          "name": "Anton",
+          "role": "Author & Screenwriter | Co-Founder, UC Media"
+        },
+        {
+          "quote": "Further’s service is excellent and highly committed to student learning — both teaching quality and administration are outstanding.",
+          "name": "Agustin",
+          "role": "Training Specialist — Accenture"
+        },
+        {
+          "quote": "Top-tier, fully customized in-company training that helped us achieve high-impact results. Thank you Natalia and team!",
+          "name": "Marité",
+          "role": "Consultora MH | Cofounder Crocus - Duty Free Shop"
+        },
+        {
+          "quote": "They delivered an outstanding English translation of a complex academic paper — fast and excellent quality.",
+          "name": "Mariano",
+          "role": "Professor, Universidad Torcuato Di Tella"
+        },
+        {
+          "quote": "Highly professional and reliable. The team is committed to learning outcomes and always responsive to our needs.",
+          "name": "Marcelo",
+          "role": "Supervising Associate | Cloud Security | ISO 27001 | EY"
+        },
+        {
+          "quote": "Excellent professionals and people. Teachers are capable and truly care about student progress.",
+          "name": "Gustavo",
+          "role": "Co-Founder, Scientia — IT Solutions"
+        },
+        {
+          "quote": "Natalia made students feel at home and ensured high-quality education. I learned a lot working with such a skilled professional.",
+          "name": "Lindsey",
+          "role": "Associate Director at Career Group"
+        },
+        {
+          "quote": "Professionalism and passion stand out — and above all, their human quality. That’s the plus that sets them apart.",
+          "name": "Silvina",
+          "role": "HR Manager | People Experience"
+        },
+        {
+          "quote": "Further adapted to our company’s constant changes and needs. We’ve worked with them for years — highly recommended!",
+          "name": "Paula",
+          "role": "Change Management"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Join the #FurtherExperience",
+      "subtitle": "Contact us today — we’ll guide your learning journey end-to-end.",
+      "primary": { "label": "Contact Us", "href": "/contacto" },
+      "secondary": { "label": "Visit us on LinkedIn", "href": "https://www.linkedin.com/" }
+    }
+  }
+
+  
+}
