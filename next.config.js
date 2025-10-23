@@ -6,7 +6,7 @@ const nextConfig = {
   },
   i18n: {
     locales: ["es", "en", "pt"],
-    defaultLocale: "en", // ⚠️ podés dejar "en" si querés, pero si tu home está en español, usá "es"
+    defaultLocale: "es",
   },
 };
 
