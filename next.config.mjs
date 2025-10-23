@@ -6,8 +6,11 @@ const nextConfig = {
   },
   i18n: {
     locales: ["es", "en", "pt"],
-    defaultLocale: "en",
+    defaultLocale: "es",
   },
+  experimental: { appDir: false },
+  pageExtensions: ["js", "jsx"],
+  distDir: ".next"
 };
 
 export default nextConfig;
