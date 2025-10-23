@@ -68,445 +68,497 @@
     }
   },
   "home": {
-    "hero": {
-      "badge": "Leading Language Solutions Since 1998",
-      "title": {
-        "prefix": "Professional Language Training for",
-        "highlight": "Global Success"
+  "hero": {
+    "badge": "Language Consulting and Professional Development",
+    "title": {
+      "prefix": "Further Corporate:",
+      "highlight": "Language Consulting and Professional Development"
+    },
+    "description": "Online and in-person language training. Nearly 30 years of expertise. In-company English and professional development workshops. Original in-house multimedia.",
+    "imageAlt": "Professional business meeting",
+    "pills": {
+      "projects": { "title": "5.5K+", "subtitle": "innovative projects completed worldwide" },
+      "clients": { "title": "10K+", "subtitle": "happy clients enjoying success" }
+    },
+    "metrics": {
+      "yearsExperience": "Years Experience",
+      "corporateClients": "Corporate Clients",
+      "studentsTrained": "Students Trained",
+      "mobile": { "years": "Years", "clients": "Clients", "students": "Students" }
+    }
+  },
+  "stats": {
+    "yearsInBusiness": { "value": 25, "label": "Years in Business" },
+    "corporatePartners": { "value": 50, "label": "Corporate Partners" },
+    "corporateStudents": { "value": 3000, "label": "Corporate Students" },
+    "privateStudents": { "value": 500, "label": "Private Students" }
+  },
+  "services": {
+    "title": "Language Services",
+    "intro": "Placement follows the CEFR (Common European Framework) to ensure transparent, internationally recognized leveling. We offer professional training, language institute services, and bespoke workshops.",
+    "cards": [
+      {
+        "title": "Corporate Training",
+        "description": "In-company English and B2B programs tailored for professional teams.",
+        "features": ["Onsite classes", "Online sessions", "Blended learning", "Custom schedules"]
       },
-      "description": "Customized corporate language programs delivering measurable results through proven methodologies and expert instruction.",
-      "imageAlt": "Professional business meeting",
-      "pills": {
-        "projects": { "title": "5.5K+", "subtitle": "innovative projects completed worldwide" },
-        "clients": { "title": "10K+", "subtitle": "happy clients enjoying success" }
+      {
+        "title": "Executive Programs",
+        "description": "One-to-one coaching in curated environments, focused on professional goals.",
+        "features": ["Private instruction", "Flexible locations", "Personalized curriculum", "Premium materials"]
       },
-      "metrics": {
-        "yearsExperience": "Years Experience",
-        "corporateClients": "Corporate Clients",
-        "studentsTrained": "Students Trained",
-        "mobile": { "years": "Years", "clients": "Clients", "students": "Students" }
+      {
+        "title": "International Certification",
+        "description": "Preparation for Cambridge, TOEFL, and other recognized certifications.",
+        "features": ["Exam strategies", "Practice tests", "Score targets", "Expert instructors"]
+      },
+      {
+        "title": "Digital Learning",
+        "description": "Further-made multimedia resources and asynchronous courses.",
+        "features": ["24/7 access", "Interactive content", "Progress tracking", "Mobile compatible"]
       }
-    },
-    "stats": {
-      "yearsInBusiness": { "value": 25, "label": "Years in Business" },
-      "corporatePartners": { "value": 50, "label": "Corporate Partners" },
-      "corporateStudents": { "value": 3000, "label": "Corporate Students" },
-      "privateStudents": { "value": 500, "label": "Private Students" }
-    },
-    "services": {
-      "title": "Professional Language Solutions",
-      "intro": "Comprehensive programs designed to meet the diverse needs of modern organizations and professionals.",
-      "cards": [
-        {
-          "title": "Corporate Training",
-          "description": "Comprehensive B2B language programs designed for professional teams with flexible delivery options.",
-          "features": ["Onsite classes", "Online sessions", "Blended learning", "Custom schedules"]
-        },
-        {
-          "title": "Executive Programs",
-          "description": "Premium one-on-one language coaching in curated environments for senior professionals.",
-          "features": ["Private instruction", "Flexible locations", "Personalized curriculum", "Premium materials"]
-        },
-        {
-          "title": "International Certification",
-          "description": "Professional preparation for Cambridge, TOEFL, and other recognized language certifications.",
-          "features": ["Exam strategies", "Practice tests", "Score guarantees", "Expert instructors"]
-        },
-        {
-          "title": "Digital Learning",
-          "description": "Self-paced asynchronous courses and multimedia resources for independent learners.",
-          "features": ["24/7 access", "Interactive content", "Progress tracking", "Mobile compatible"]
-        }
-      ]
-    },
-    "methodology": {
-      "title": "Proven Methodology, Measurable Results",
-      "intro": "Our approach combines internationally recognized frameworks with innovative teaching methods to deliver consistent, measurable outcomes.",
-      "bullets": [
-        {
-          "title": "CEFR-Based Assessment",
-          "text": "Transparent placement and progress tracking aligned with Common European Framework standards."
-        },
-        {
-          "title": "Performance Metrics",
-          "text": "Regular assessments and detailed reporting to track competency development and ROI."
-        },
-        {
-          "title": "Practical Application",
-          "text": "Real-world scenarios and business-focused content to ensure immediate workplace application."
-        }
-      ],
-      "imageAlt": "Professional training session"
-    },
-    "testimonials": {
-      "title": "Client Success Stories",
-      "subtitle": "Trusted by leading organizations across industries",
-      "items": [
-        {
-          "quote": "Further's corporate program transformed our team's ability to communicate with international clients. The ROI was evident within the first quarter.",
-          "name": "María González",
-          "role": "HR Director",
-          "company": "Tech Solutions SA"
-        },
-        {
-          "quote": "Professional, structured, and results-driven. The customized curriculum addressed our specific industry needs perfectly.",
-          "name": "Carlos Rodríguez",
-          "role": "Training Manager",
-          "company": "Global Industries"
-        },
-        {
-          "quote": "The flexibility and quality of instruction exceeded our expectations. Our executives now conduct international meetings with confidence.",
-          "name": "Laura Martínez",
-          "role": "CEO",
-          "company": "Innovation Group"
-        }
-      ]
-    },
-    "cta": {
-      "title": "Ready to Elevate Your Team's Language Skills?",
-      "subtitle": "Contact us today to discuss a customized language training solution for your organization."
-    }
+    ]
   },
-   "about": {
-    "meta": {
-      "title": "About Us | Further Corporate",
-      "description": "Professional language services since 1997. Nearly 30 years delivering measurable impact for companies and individuals."
-    },
-    "hero": {
-      "badge": "Since 1997",
-      "title": { "prefix": "Professional Language Services", "highlight": "since 1997" },
-      "subtitle": "Nearly 30 Years of Experience",
-      "description": "We provide professional language services that go beyond traditional classes. From B2B training to in-person coaching and multimedia resources, our programs are designed to create measurable impact.",
-      "imageAlt": "Further team working on language programs",
-      "caption": "Professional language services since 1997.",
-      "primaryCta": { "label": "Contact Us", "href": "/contacto" },
-      "secondaryCta": { "label": "Discover Further Media", "href": "#media" }
-    },
-    "intro": {
-      "heading": "Professional Language Services Since 1997",
-      "subheading": "Learning languages today is a powerful, career-defining tool.",
-      "paragraphs": [
-        "We offer more than language classes. We design customized programs for companies and individuals, aligned with business goals and measurable outcomes.",
-        "Our approach blends international standards (CEFR) with modern, data-informed teaching to ensure real progress and confidence in professional settings."
-      ]
-    },
-    "media": {
-      "title": "Discover Further Media",
-      "text": "Podcast, TikTok, and YouTube to practice vocabulary and learn curious facts in English.",
-      "links": [
-        { "label": "Podcast", "href": "/media/podcast", "aria": "Open Further Podcast" },
-        { "label": "TikTok", "href": "/media/tiktok", "aria": "Open TikTok channel" },
-        { "label": "YouTube", "href": "/media/youtube", "aria": "Open YouTube channel" }
-      ]
-    },
-    "testimonials": {
-      "title": "Client Testimonials",
-      "subtitle": "Real experiences from partners, HR leaders, teachers, and students",
-      "items": [
-        { "quote": "Natalia brings out the best in everyone and ensures the school runs smoothly while caring for staff well-being. A pleasure to volunteer!", "name": "Raymond", "role": "Supply Chain Executive | Senior Product Manager — Optimization Technologies" },
-        { "quote": "Friendly, warm, and supportive atmosphere. I felt comfortable discussing lesson plans and strategies. Students improved, and so did I as a teacher.", "name": "Anton", "role": "Author & Screenwriter | Co-Founder, UC Media" },
-        { "quote": "Further’s service is excellent and highly committed to student learning — both teaching quality and administration are outstanding.", "name": "Agustin", "role": "Training Specialist — Accenture" },
-        { "quote": "Top-tier, fully customized in-company training that helped us achieve high-impact results. Thank you Natalia and team!", "name": "Marité", "role": "Consultora MH | Cofounder Crocus - Duty Free Shop" },
-        { "quote": "They delivered an outstanding English translation of a complex academic paper — fast and excellent quality.", "name": "Mariano", "role": "Professor, Universidad Torcuato Di Tella" },
-        { "quote": "Highly professional and reliable. The team is committed to learning outcomes and always responsive to our needs.", "name": "Marcelo", "role": "Supervising Associate | Cloud Security | ISO 27001 | EY" },
-        { "quote": "Excellent professionals and people. Teachers are capable and truly care about student progress.", "name": "Gustavo", "role": "Co-Founder, Scientia — IT Solutions" },
-        { "quote": "Natalia made students feel at home and ensured high-quality education. I learned a lot working with such a skilled professional.", "name": "Lindsey", "role": "Associate Director at Career Group" },
-        { "quote": "Professionalism and passion stand out — and above all, their human quality. That’s the plus that sets them apart.", "name": "Silvina", "role": "HR Manager | People Experience" },
-        { "quote": "Further adapted to our company’s constant changes and needs. We’ve worked with them for years — highly recommended!", "name": "Paula", "role": "Change Management" }
-      ]
-    },
-    "cta": {
-      "title": "Join the #FurtherExperience",
-      "subtitle": "Contact us today — we’ll guide your learning journey end-to-end.",
-      "button": "Visit us on LinkedIn",
-      "href": "https://www.linkedin.com/"
-    }
-  },
-  "academy": {
-    "meta": {
-      "title": "Further Academy | Study English on Your Terms",
-      "description": "Advance at your own pace with practical, real-world English courses. No strict schedules or live calls. Online certification included."
-    },
-    "hero": {
-      "badge": "Learn on your terms",
-      "title": { "prefix": "Further", "highlight": "Academy" },
-      "description": "Break boundaries: Elevate your English, anytime, anywhere.",
-      "sub": "Advance at your own pace with practical, real-world courses.",
-      "ctaPrimary": "Explore All Courses",
-      "ctaSecondary": "More About Further"
-    },
-    "trust": { "title": "Trusted by leading companies worldwide" },
-    "intro": {
-      "kicker": "Welcome to Further Academy",
-      "title": "Study anytime, anywhere, with",
-      "highlight": "no strict schedules",
-      "copy": "Perfect for busy individuals—you can advance at your own pace and fit learning seamlessly into your life. Get online certification upon completion, based on your achievement. Explore specialized courses like English for Interviews, Client Presentations, Business English Vocabulary, and much more!",
-      "points": {
-        "selfPaced": "Self-paced learning",
-        "cert": "Online certification",
-        "specialized": "Specialized courses",
-        "flexible": "Flexible scheduling"
+  "methodology": {
+    "title": "More than classes: experience and outcomes",
+    "intro": "Language learning is a key tool to navigate the 21st century. We create in-house audiovisual materials and use social media boosters to accompany students at every moment.",
+    "bullets": [
+      {
+        "title": "CEFR-Based Assessment",
+        "text": "Placement and progress tracking aligned with international standards."
       },
-      "imageAlt": "Learner studying online in a flexible environment"
-    },
-    "featured": {
-      "section": "Featured Course",
-      "browseAll": "Browse All",
-      "badgeOffer": "🎁 OFFER",
-      "badgeHot": "🔥 Popular",
-      "kicker": "Featured Course",
-      "title": "Pitch Mastery",
-      "desc": "Enhance your communication skills and learn how to deliver powerful and effective presentations in English — whether at work, in meetings, or professional introductions.",
-      "bullets": [
-        "Presentation structure & delivery",
-        "Professional introductions",
-        "Clear and concise communication",
-        "Building trust and understanding"
-      ],
-      "startCourse": "Start Course",
-      "goCourse": "Go to course",
-      "price": { "original": "$100,000", "sale": "$60,000" },
-      "limited": "Limited time",
-      "tags": {
-        "aiSkills": "AI Skills",
-        "peopleCulture": "People & Culture",
-        "leadership": "Leadership"
+      {
+        "title": "Integrated Practice",
+        "text": "Listening and writing practice to build confident speakers in real contexts."
       },
-      "cta": "Enroll Now",
-      "view": "View Details"
-    },
-    "latest": {
-      "title": "Latest Courses",
-      "browse": "Browse All",
-      "placeholder": "More courses arriving soon.",
-      "items": {
-        "pitch": {
-          "alt": "Pitch Mastery course cover",
-          "offer": "OFFER",
-          "popular": "Popular",
-          "title": "Pitch Mastery",
-          "level": "Intermediate",
-          "summary": "Over the next 10 classes, you will transform the way you present your ideas. Practical videos, guided exercises, and self-recordings to build and refine your pitch. Final delivery: a polished video pitch with expert feedback.",
-          "duration": "20h",
-          "price": { "original": "$100,000", "sale": "$60,000" },
-          "view": "View Details",
-          "go": "Go to course"
-        }
+      {
+        "title": "Original & Updated Resources",
+        "text": "Further Records podcast, YouTube reviews, and fun English content on TikTok."
       }
-    },
-    "testimonials": {
-      "title": "Trusted by Learners and Educators",
-      "items": [
-        {
-          "quote": "For several years we have chosen Further to provide English classes for our collaborators. Always attentive to the company's and students' needs, they adapt quickly to changes. Highly recommended.",
-          "initials": "P",
-          "name": "PAULA",
-          "role": "Change Management — Leading Consulting Firm"
-        },
-        {
-          "quote": "Further and Natalia deliver excellent service and are highly committed to student outcomes. Strong teaching quality and an outstanding administrative experience.",
-          "initials": "A",
-          "name": "AGUSTÍN",
-          "role": "HR Director — ACCENTURE"
-        }
-      ]
-    }
+    ],
+    "imageAlt": "Professional training session"
   },
-  "school": {
-    "meta": {
-      "title": "Further School of Languages — Learning English Since 1997",
-      "description": "In-person and online English classes for all ages. Preparation for Cambridge and TOEFL exams. Dynamic methodology, measurable progress, and expert teachers."
-    },
-    "hero": {
-      "title": "Further School of Languages:",
-      "subtitle": "Learning English Since 1997"
-    },
-    "sections": {
-      "fun": {
-        "title": "Learning English the Fun Way",
-        "body": "Our classes are anything but boring. We integrate games, short projects, and real-life situations so you can start speaking confidently from day one."
+  "testimonials": {
+    "title": "The #FurtherExperience",
+    "subtitle": "Dynamic, refreshing classes with an immersive cultural focus",
+    "items": [
+      {
+        "quote": "The cultural approach and constant practice helped our team communicate confidently in English.",
+        "name": "María González",
+        "role": "HR Director",
+        "company": "Tech Solutions SA"
       },
-      "park": {
-        "title": "English School in Parque Patricios",
-        "body": "We offer in-person classes in Parque Patricios and live online lessons. Courses are designed for kids, teens, and adults with small groups and personalized attention."
+      {
+        "quote": "Further’s own materials and day-to-day activities are ideal for busy professionals.",
+        "name": "Carlos Rodríguez",
+        "role": "Training Manager",
+        "company": "Global Industries"
       },
-      "culture": {
-        "body": "We see language as part of culture. That’s why we use music, movies, podcasts, and authentic materials to bring real-world English into the classroom."
+      {
+        "quote": "Further Media kept learning alive between classes. Highly recommended.",
+        "name": "Laura Martínez",
+        "role": "CEO",
+        "company": "Innovation Group"
       }
-    },
-    "exams": {
-      "title": "International Exam Preparation",
-      "expertIntro": "We specialize in preparation for international English certifications:",
-      "cambridgeTitle": "Cambridge English Exams",
-      "cambridge": ["Starters", "Movers", "Flyers", "KET (A2 Key)", "PET (B1 Preliminary)", "FCE (B2 First)", "CAE (C1 Advanced)", "CPE (C2 Proficiency)", "IELTS"],
-      "usTitle": "American English Exams",
-      "toefl": "TOEFL: Test of English as a Foreign Language"
-    },
-    "instagram": {
-      "handle": "@furtherlanguages",
-      "title": "Further School",
-      "followLabel": "Follow",
-      "loadMore": "Load more",
-      "widgetCredit": "Free Instagram feed widget",
-      "cta": "Visit us on Instagram",
-      "ctaBody": "We bring freshness to our classes by incorporating play, spontaneity, and natural communication as key tools to develop our students’ potential.",
-      "href": "https://www.instagram.com/furtherlanguages/"
-    }
+    ]
   },
-  "furthermore": {
-    "meta": {
-      "title": "Furthermore — Learn English Through Play",
-      "description": "Play-based learning for all ages. Take English everywhere with our FURTHERMORE game series."
-    },
-    "hero": { "title": "Furthermore:", "subtitle": "Learn English Through Play" },
-    "intro": {
-      "kicker": "Play-based learning",
-      "title": "Play-based learning for all ages",
-      "body": "With our FURTHERMORE game series, take English everywhere! Play with your family, your friends, or use it for corporate sessions. We bring learning outside the classroom so you can learn English through play.",
-      "motto": "The more you play, the more you learn."
-    },
-    "features": {
-      "familyTitle": "For family and friends",
-      "familyBody": "Fun at home or on the go. Short activities, simple rules, and useful vocabulary.",
-      "familyPill": "Casual",
-      "corporateTitle": "Corporate activities",
-      "corporateBody": "Icebreakers, team-building, and English practice in real workplace contexts.",
-      "corporatePill": "B2B",
-      "outdoorTitle": "Outside the classroom",
-      "outdoorBody": "Take learning to parks, cafés, or events. Lively, meaningful English.",
-      "outdoorPill": "Real-world contexts"
-    },
-    "gallery": { "title": "Our games" },
-    "cta": { "primary": "Browse games", "secondary": "Follow on Instagram" },
-    "ctaBar": {
-      "title": "Want to play and learn?",
-      "subtitle": "Message us and we’ll help you bring FURTHERMORE to your home or workplace."
-    },
-    "instagram": {
-      "title": "Furthermore",
-      "handle": "@furtherlanguages",
-      "cta": "Visit us on Instagram",
-      "followLabel": "Follow",
-      "loadMore": "Load more",
-      "widgetCredit": "Free Instagram feed widget",
-      "href": "https://www.instagram.com/furtherlanguages/"
-    }
-  },
-  "tefl": {
-    "meta": {
-      "title": "TEFL — Teaching English as a Foreign Language",
-      "description": "Become an English teacher, work abroad, and get certified with our TEFL course in Buenos Aires."
-    },
-    "hero": { "title": "TEFL:", "subtitle": "Teaching English as a Foreign Language" },
-    "blocks": {
-      "workAbroad": {
-        "title": "Become an English Teacher and work abroad",
-        "lead": "Have you ever wanted to travel the world while teaching English?",
-        "body": "Get the opportunity to live and work in Buenos Aires, which is ranked among the most beautiful cities in South America.",
-        "logoAlt": "TEFL by Further logo",
-        "logoSrc": "/images/tefl-logo.png"
-      },
-      "cert": {
-        "title": "Get certified with our TEFL Course.",
-        "body1": "Learn how to teach English to non-speakers. After completing our course, you’ll immediately be considered to work for our company.",
-        "body2": "Learn teaching methodology, class best practices, and how to incorporate audiovisual material into your class."
-      }
-    },
-    "closing": {
-      "title": "Develop your teaching skills and teach English in Buenos Aires with TEFL by Further"
-    },
-    "media": { "videoId": "lS8_TU-yAr4" }
-  },
+  "cta": {
+    "title": "Open the doors to the FURTHER Universe",
+    "subtitle": "Connect with the world and join the #FurtherExperience."
+  }
+},
 
-   "furtherMedia": {
-    "meta": {
-      "title": "Further Media — Podcast, YouTube & TikTok to Learn English",
-      "description": "Podcast, YouTube and TikTok for English learners. Improve comprehension, vocabulary, and pronunciation with Further Records and multimedia resources."
+
+  "about": {
+  "meta": {
+    "title": "About Us | Further Corporate",
+    "description": "Nearly 30 years providing professional language training. Discover our history, methodology, and what makes Further Corporate unique."
+  },
+  "hero": {
+    "badge": "Since 1997",
+    "title": { "prefix": "Language Consultancy", "highlight": "since 1997" },
+    "subtitle": "Over two decades of professional experience",
+    "description": "Further Corporate delivers comprehensive language solutions: corporate training, professional development, and original audiovisual content. We empower individuals and companies to grow globally.",
+    "imageAlt": "Further team working on language programs",
+    "caption": "Language consultancy and professional training since 1997.",
+    "primaryCta": { "label": "Contact Us", "href": "/contact" },
+    "secondaryCta": { "label": "Discover Further Media", "href": "#media" }
+  },
+  "intro": {
+    "heading": "Professional Language Services Since 1997",
+    "subheading": "Learning languages is a strategic investment.",
+    "paragraphs": [
+      "At Further, we design tailored programs for companies and professionals. Each solution aligns with business goals, combining international standards (CEFR) with data-driven teaching approaches.",
+      "We are committed to real progress: measurable results, effective communication, and confidence in professional settings."
+    ]
+  },
+  "media": {
+    "title": "Discover Further Media",
+    "text": "Explore our podcast, YouTube channel, and TikTok content. Practice vocabulary, improve comprehension, and join the #FurtherExperience.",
+    "links": [
+      { "label": "Podcast", "href": "/media/podcast", "aria": "Open Further Podcast" },
+      { "label": "TikTok", "href": "/media/tiktok", "aria": "Open TikTok channel" },
+      { "label": "YouTube", "href": "/media/youtube", "aria": "Open YouTube channel" }
+    ]
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "Real experiences from professionals and partner companies",
+    "items": [
+      { "quote": "We've been working with Further for over 5 years. Teaching quality and guidance are exceptional.", "name": "Agustín", "role": "Training Specialist | HR - Accenture" },
+      { "quote": "Tailored programs, measurable results, and total flexibility.", "name": "Marité", "role": "Consultant MH | Crocus Duty Free Co-Founder" },
+      { "quote": "Professional and human team, fully committed to student progress.", "name": "Gustavo", "role": "Co-Founder | Scientia IT Solutions" },
+      { "quote": "Innovative materials, personalized support, and tangible outcomes.", "name": "Silvina", "role": "HR Manager | People Experience" }
+    ]
+  },
+  "cta": {
+    "title": "Join the #FurtherExperience",
+    "subtitle": "We’ll guide you through every step of your language journey.",
+    "button": "Visit us on LinkedIn",
+    "href": "https://www.linkedin.com/"
+  }
+},
+
+  "academy": {
+  "meta": {
+    "title": "Further Academy | Learn English at Your Own Pace",
+    "description": "Learn English the modern way with self-paced online courses. No fixed schedules, flexible certification, and original Further Corporate materials."
+  },
+  "hero": {
+    "badge": "Learn on your terms",
+    "title": { "prefix": "Further", "highlight": "Academy" },
+    "description": "Break barriers: enhance your English anytime, anywhere. Courses designed for your own pace, with professional support and original resources.",
+    "sub": "Advance through practical, interactive lessons designed for real-world use.",
+    "ctaPrimary": "Explore Courses",
+    "ctaSecondary": "More About Further"
+  },
+  "trust": { "title": "Trusted by leading companies worldwide" },
+  "intro": {
+    "kicker": "Welcome to Further Academy",
+    "title": "Study anytime, anywhere, with",
+    "highlight": "no strict schedules",
+    "copy": "Perfect for busy professionals. Further Academy helps you progress at your own pace, strengthen your skills, and earn online certification. Explore courses like English for Interviews, Business Presentations, and Professional Communication.",
+    "points": {
+      "selfPaced": "Self-paced learning",
+      "cert": "Online certification",
+      "specialized": "Specialized courses",
+      "flexible": "Flexible scheduling"
     },
-    "hero": {
-      "title": "Further Media:",
-      "subtitle": "Podcast, YouTube and TikTok to Learn English"
+    "imageAlt": "Student learning with digital platform"
+  },
+  "featured": {
+    "section": "Featured Course",
+    "browseAll": "Browse All",
+    "badgeOffer": "🎁 OFFER",
+    "badgeHot": "🔥 Popular",
+    "kicker": "Featured Course",
+    "title": "Pitch Mastery",
+    "desc": "Learn how to deliver clear, confident, and impactful presentations in English. Guided exercises, practical videos, and expert feedback.",
+    "bullets": [
+      "Structure and delivery of presentations",
+      "Professional self-expression",
+      "Clear and confident communication",
+      "Building trust and understanding"
+    ],
+    "startCourse": "Start Course",
+    "goCourse": "Go to course",
+    "price": { "original": "$100,000", "sale": "$60,000" },
+    "limited": "Limited time",
+    "tags": {
+      "aiSkills": "AI Skills",
+      "peopleCulture": "People & Culture",
+      "leadership": "Leadership"
     },
-    "records": {
-      "title": "Further Records: The podcast for English learners",
-      "intro": "Our English podcast accompanies students through the #FurtherExperience. Learn about general culture topics, practice with custom exercises, and improve comprehension and pronunciation.",
-      "body": "The vocabulary review from each episode is available on our YouTube channel — learn alongside our characters!"
-    },
-    "spotify": {
-      "title": "Further Records on Spotify"
-    },
-    "apps": {
-      "title": "Also available on",
-      "youtubeMusic": "YouTube Music",
-      "amazonMusic": "Amazon Music",
-      "applePodcasts": "Apple Podcasts"
-    },
-    "classes": {
-      "title": "English classes that offer more",
-      "body": "At Further, we provide complementary materials for all our courses so students can continue developing their skills beyond the classroom."
-    },
-    "youtube": {
-      "title": "Further Corporate on YouTube"
-    },
-    "tiktok": {
-      "title": "Further Corporate on TikTok"
+    "cta": "Enroll Now",
+    "view": "View Details"
+  },
+  "latest": {
+    "title": "Latest Courses",
+    "browse": "Browse All",
+    "placeholder": "More courses arriving soon.",
+    "items": {
+      "pitch": {
+        "alt": "Pitch Mastery course cover",
+        "offer": "OFFER",
+        "popular": "Popular",
+        "title": "Pitch Mastery",
+        "level": "Intermediate",
+        "summary": "In 10 classes, you'll transform how you present your ideas in English. With short videos, guided exercises, and personalized feedback, you'll master your professional pitch.",
+        "duration": "20h",
+        "price": { "original": "$100,000", "sale": "$60,000" },
+        "view": "View Details",
+        "go": "Go to course"
+      }
     }
   },
+  "testimonials": {
+    "title": "Trusted by Learners and Companies",
+    "items": [
+      {
+        "quote": "Further’s courses are excellent — dynamic, practical, and high-quality. Perfect for professionals with limited time.",
+        "initials": "P",
+        "name": "PAULA",
+        "role": "Change Management — Leading Consulting Firm"
+      },
+      {
+        "quote": "Excellent service and teaching support. The methodology helped me make consistent, flexible progress.",
+        "initials": "A",
+        "name": "AGUSTÍN",
+        "role": "HR Director — ACCENTURE"
+      }
+    ]
+  }
+},
+
+  "school": {
+  "meta": {
+    "title": "Further School of Languages — Learning English Since 1997",
+    "description": "In-person and online English lessons for all ages. Cambridge and TOEFL preparation. Dynamic methodology, expert teachers, and measurable results."
+  },
+  "hero": {
+    "title": "Further School of Languages:",
+    "subtitle": "Learning English Since 1997"
+  },
+  "sections": {
+    "fun": {
+      "title": "Learn English the Fun Way",
+      "body": "At Further School, learning English is a dynamic and engaging experience. Our classes integrate games, creative projects, and real-life situations so students can speak naturally from day one."
+    },
+    "park": {
+      "title": "English School in Parque Patricios",
+      "body": "We offer in-person lessons in Parque Patricios and live online classes. Our programs are designed for kids, teens, and adults, with small groups and personalized attention."
+    },
+    "culture": {
+      "body": "We see language as part of culture. That’s why we use music, film, podcasts, and authentic materials to bring real English into the classroom."
+    }
+  },
+  "exams": {
+    "title": "International Exam Preparation",
+    "expertIntro": "We specialize in preparation for international English certifications:",
+    "cambridgeTitle": "Cambridge English Exams",
+    "cambridge": ["Starters", "Movers", "Flyers", "KET (A2 Key)", "PET (B1 Preliminary)", "FCE (B2 First)", "CAE (C1 Advanced)", "CPE (C2 Proficiency)", "IELTS"],
+    "usTitle": "American English Exams",
+    "toefl": "TOEFL: Test of English as a Foreign Language"
+  },
+  "instagram": {
+    "handle": "@furtherlanguages",
+    "title": "Further School",
+    "followLabel": "Follow",
+    "loadMore": "Load more",
+    "widgetCredit": "Free Instagram widget",
+    "cta": "Visit us on Instagram",
+    "ctaBody": "We bring freshness into learning by incorporating play, spontaneity, and curiosity as essential tools to unlock every student’s potential.",
+    "href": "https://www.instagram.com/furtherlanguages/"
+  }
+},
+
+  "furthermore": {
+  "meta": {
+    "title": "Furthermore — Learn English Through Play",
+    "description": "Play-based learning for all ages. Take English everywhere with our FURTHERMORE game series."
+  },
+  "hero": { 
+    "title": "Furthermore:", 
+    "subtitle": "Learn English Through Play" 
+  },
+  "intro": {
+    "kicker": "Play-based learning",
+    "title": "Learning English in a fun and meaningful way",
+    "body": "FURTHERMORE is our educational game series that blends play and learning. Created by Further Corporate teachers, it’s designed to build vocabulary, fluency, and real-life communication — at home, in school, or at work.",
+    "motto": "The more you play, the more you learn."
+  },
+  "features": {
+    "familyTitle": "For family and friends",
+    "familyBody": "Play and practice English naturally at home or on the go. Short, simple, and fun activities with useful vocabulary.",
+    "familyPill": "Casual",
+    "corporateTitle": "Corporate activities",
+    "corporateBody": "Icebreakers, team-building dynamics, and language challenges in real professional settings.",
+    "corporatePill": "B2B",
+    "outdoorTitle": "Outside the classroom",
+    "outdoorBody": "Learn in parks, cafés, or events. Activities that connect language with real-world interaction.",
+    "outdoorPill": "Real-world contexts"
+  },
+  "gallery": { "title": "Our games" },
+  "cta": { 
+    "primary": "Browse games", 
+    "secondary": "Follow on Instagram" 
+  },
+  "ctaBar": {
+    "title": "Want to play and learn?",
+    "subtitle": "Message us to bring FURTHERMORE to your school or company."
+  },
+  "instagram": {
+    "title": "Furthermore",
+    "handle": "@furtherlanguages",
+    "cta": "Visit us on Instagram",
+    "followLabel": "Follow",
+    "loadMore": "Load more",
+    "widgetCredit": "Free Instagram feed widget",
+    "href": "https://www.instagram.com/furtherlanguages/"
+  }
+},
+
+  "tefl": {
+  "meta": {
+    "title": "TEFL — Teaching English as a Foreign Language",
+    "description": "Become a certified English teacher with international recognition. Train in Buenos Aires with real classroom practice and professional mentoring from Further Corporate."
+  },
+  "hero": { 
+    "title": "TEFL:", 
+    "subtitle": "Teaching English as a Foreign Language" 
+  },
+  "blocks": {
+    "workAbroad": {
+      "title": "Become an English teacher and open new career horizons",
+      "lead": "Dreaming of teaching English and traveling the world?",
+      "body": "Our TEFL course provides the tools and techniques to teach English to non-native speakers. It includes hands-on training, modern methodology, and job opportunities within Further Corporate.",
+      "logoAlt": "TEFL by Further logo",
+      "logoSrc": "/images/tefl-logo.png"
+    },
+    "cert": {
+      "title": "Get certified with TEFL by Further.",
+      "body1": "Learn how to plan effective lessons, assess progress, and adapt materials for different levels. Upon completion, you'll be eligible to apply for teaching positions with us.",
+      "body2": "The course includes real classroom observations, case analysis, and strategies for integrating audiovisual and digital resources."
+    }
+  },
+  "closing": {
+    "title": "Develop your teaching skills and teach English with TEFL by Further"
+  },
+  "media": { "videoId": "lS8_TU-yAr4" }
+},
+
+"furtherMedia": {
+  "meta": {
+    "title": "Further Media — Podcast, YouTube & TikTok to Learn English",
+    "description": "Explore audiovisual content designed to enhance your learning experience. Further Corporate’s Podcast, YouTube, and TikTok: vocabulary, culture, and pronunciation in real contexts."
+  },
+  "hero": {
+    "title": "Further Media:",
+    "subtitle": "Podcast, YouTube and TikTok to Learn English"
+  },
+  "records": {
+    "title": "Further Records: The Podcast for English Learners",
+    "intro": "Our podcast accompanies students and professionals through the #FurtherExperience. Each episode combines general culture topics, useful vocabulary, and exercises to practice comprehension and pronunciation.",
+    "body": "Created by Further Corporate teachers, Further Records extends our classroom experience and helps learners continue their progress anytime, anywhere."
+  },
+  "spotify": {
+    "title": "Listen on Spotify"
+  },
+  "apps": {
+    "title": "Also available on",
+    "youtubeMusic": "YouTube Music",
+    "amazonMusic": "Amazon Music",
+    "applePodcasts": "Apple Podcasts"
+  },
+  "classes": {
+    "title": "Classes Beyond the Classroom",
+    "body": "At Further, we enhance the learning experience with complementary audio and video materials. Each course includes access to curated content that reinforces lessons and promotes continuous learning."
+  },
+  "youtube": {
+    "title": "Further Corporate on YouTube"
+  },
+  "tiktok": {
+    "title": "Further Corporate on TikTok"
+  }
+},
+
+"faq": {
+  "meta": {
+    "title": "Frequently Asked Questions | Further Corporate",
+    "description": "Answers about our classes, services, certifications, payments, and more.",
+    "canonical": "https://furthercorporate.com/faq"
+  },
+  "hero": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our programs",
+    "body": "Can’t find what you’re looking for? Contact us and we’ll be happy to help."
+  },
+  "toc": { "title": "On this page" },
+  "items": [
+    {
+      "id": "what-is-further",
+      "q": "What is Further Corporate?",
+      "a": "We are a language consultancy with over 25 years of experience in professional training, audiovisual content, and corporate communication skills development."
+    },
+    {
+      "id": "how-do-classes-work",
+      "q": "How do the classes work?",
+      "a": "We offer onsite, online, and blended classes. Each program is tailored to goals and level, using original materials and CEFR-aligned modern methodologies."
+    },
+    {
+      "id": "payments",
+      "q": "What payment methods are accepted?",
+      "a": "We accept corporate billing, bank transfers, and custom payment plans depending on program duration."
+    },
+    {
+      "id": "certificates",
+      "q": "Do you issue certificates?",
+      "a": "Yes. All our programs include completion certificates and optional preparation for international exams such as Cambridge or TOEFL."
+    }
+  ],
+  "cta": {
+    "title": "Still have questions?",
+    "body": "Our team is here to help you find the right program for you or your organization.",
+    "primary": "Contact Us",
+    "secondary": "Explore Further Media"
+  }
+},
 
     "contact": {
-    "meta": {
-      "title": "Contact | Further Corporate",
-      "description": "Get in touch to request a proposal or schedule a consultation for your language training program.",
-      "canonical": "https://your-domain.com/contacto"
-    },
-    "breadcrumb": { "home": "Home", "contact": "Contact" },
-    "hero": {
-      "title": "Talk to our team",
-      "subtitle": "Let’s design your language program",
-      "body": "Share your goals, team size and timeline. We’ll reply within one business day."
-    },
-    "form": {
-      "title": "Send a message",
-      "cta": "Send",
-      "secondary": "Back to Home",
-      "fields": {
-        "name": { "label": "Full name", "placeholder": "Jane Doe" },
-        "email": { "label": "Work email" },
-        "company": { "label": "Company (optional)", "placeholder": "ACME Inc." },
-        "message": { "label": "Message", "placeholder": "Goals, team, schedules, timeline..." }
-      }
-    },
-    "errors": {
-      "name": "Please enter your name.",
-      "message": "Please write a short message.",
-      "consent": "Please accept the privacy policy to proceed."
-    },
-    "consent": {
-      "required": true,
-      "label": "I agree to the <a href='/privacy'>privacy policy</a>.",
-      "help": "We will only use your data to contact you about this request."
-    },
-    "sidebar": {
-      "title": "Contact information",
-      "body": "Prefer direct contact? Here are our details."
-    },
-    "company": {
-      "email": "hello@your-domain.com",
-      "phone": "+54 11 5555-5555",
-      "address": "Parque Patricios, Buenos Aires"
-    },
-    "cta": {
-      "title": "Short on time?",
-      "body": "Schedule a quick call and we’ll outline your program.",
-      "label": "Schedule Call",
-      "href": "/"
-    },
-    "ctaFinal": {
-      "title": "Let’s talk",
-      "body": "Tell us about your goals. We’ll tailor a solution.",
-      "primary": "Email us",
-      "secondary": "Explore our media"
-    },
-    "a11y": { "skip": "Skip to content" }
-  }
+  "meta": {
+    "title": "Contact | Further Corporate",
+    "description": "Get in touch to request a proposal, schedule a meeting, or learn more about our language training programs.",
+    "canonical": "https://your-domain.com/contact"
+  },
+  "breadcrumb": { "home": "Home", "contact": "Contact" },
+  "hero": {
+    "title": "Let’s talk about your project",
+    "subtitle": "Let’s design your language program together",
+    "body": "Share your goals, team size, and timeline. We’ll get back to you within one business day."
+  },
+  "form": {
+    "title": "Send us a message",
+    "cta": "Send",
+    "secondary": "Back to Home",
+    "fields": {
+      "name": { "label": "Full name", "placeholder": "Jane Doe" },
+      "email": { "label": "Work email" },
+      "company": { "label": "Company (optional)", "placeholder": "ACME Inc." },
+      "message": { "label": "Message", "placeholder": "Tell us about your goals, team, schedule, and timeline..." }
+    }
+  },
+  "errors": {
+    "name": "Please enter your name.",
+    "message": "Please write a message.",
+    "consent": "You must accept the privacy policy to continue."
+  },
+  "consent": {
+    "required": true,
+    "label": "I agree to the <a href='/privacy'>privacy policy</a>.",
+    "help": "We’ll use your data solely to respond to this request."
+  },
+  "sidebar": {
+    "title": "Contact information",
+    "body": "Prefer direct contact? Here’s how to reach us."
+  },
+  "company": {
+    "email": "info@furthercorporate.com",
+    "phone": "+54 11 5555-5555",
+    "address": "Parque Patricios, Buenos Aires, Argentina"
+  },
+  "cta": {
+    "title": "Short on time?",
+    "body": "Let’s schedule a quick call and plan your program together.",
+    "label": "Schedule Call",
+    "href": "/"
+  },
+  "ctaFinal": {
+    "title": "We’re here to help",
+    "body": "Tell us what you need and we’ll tailor the perfect language solution.",
+    "primary": "Send Message",
+    "secondary": "Explore Further Media"
+  },
+  "a11y": { "skip": "Skip to main content" }
+}
+
 }
