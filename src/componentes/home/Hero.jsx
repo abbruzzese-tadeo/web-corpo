@@ -43,60 +43,92 @@ export default function Hero() {
       />
 
       {/* 🧠 Contenido principal */}
-      <motion.div style={{ y, opacity }} className="relative z-10 text-center px-6 md:px-10 max-w-4xl">
-        {/* Badge superior */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-white/15 to-white/5 backdrop-blur-md border border-white/20 text-sm font-medium mb-6"
-        >
-          <span className="text-white/90">{t("home.hero.badge")}</span>
-        </motion.div> */}
+      
+<motion.div
+  style={{ y, opacity }}
+  className="relative z-10 flex flex-col items-start text-left px-8 md:px-20 max-w-5xl"
+>
+  {/* 🔸 Badge con flotación */}
+  <motion.div
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-lg px-5 py-2 shadow-[0_0_30px_rgba(255,255,255,0.08)] mb-6 animate-float-slow"
+  >
+    <span className="relative flex h-2 w-2">
+      <span className="absolute inline-flex h-full w-full rounded-full bg-gradient-to-r from-[#EE7203] to-[#FF3816] opacity-70 animate-ping"></span>
+      <span className="relative inline-flex h-2 w-2 rounded-full bg-gradient-to-r from-[#EE7203] to-[#FF3816]" />
+    </span>
+    <span className="text-sm font-medium text-white/90 tracking-wide">
+      {t("home.hero.badge")}
+    </span>
+  </motion.div>
 
-        {/* Título principal */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight"
-        >
-          {t("home.hero.title.prefix")}{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#EE7203] via-[#FF3816] to-[#EE7203] animate-gradient">
-            {t("home.hero.title.highlight")}
-          </span>
-        </motion.h1>
+  {/* 🌈 Glow decorativo detrás del texto */}
+  <div
+    aria-hidden
+    className="absolute -left-40 top-10 w-[550px] h-[550px] bg-[radial-gradient(circle_at_center,rgba(255,98,0,0.5),transparent_70%)] blur-[120px] opacity-30 animate-pulse-slow"
+  />
+  <div
+    aria-hidden
+    className="absolute left-[40%] bottom-0 w-[400px] h-[400px] bg-[radial-gradient(circle_at_center,rgba(255,56,22,0.5),transparent_70%)] blur-[140px] opacity-20 animate-pulse-slower"
+  />
 
-        {/* Descripción */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
-        >
-          {t("home.hero.description")}
-        </motion.p>
+  {/* 🧠 Título */}
+  <motion.h1
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="relative text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]"
+  >
+    {t("home.hero.title.prefix")}{" "}
+    <span className="relative inline-block">
+      <span className="bg-gradient-to-r from-[#EE7203] via-[#FF3816] to-[#EE7203] bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent">
+        {t("home.hero.title.highlight")}
+      </span>
+      {/* Glow detrás */}
+      <span className="absolute inset-0 blur-2xl opacity-40 bg-gradient-to-r from-[#EE7203]/60 via-[#FF3816]/60 to-[#EE7203]/60 -z-10"></span>
+    </span>
+  </motion.h1>
 
-        {/* Botones */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="flex flex-wrap gap-4 justify-center mt-10"
-        >
-          <button className="group relative inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm font-bold text-white bg-gradient-to-r from-[#EE7203] to-[#FF3816] hover:shadow-[0_0_40px_rgba(238,114,3,0.5)] transition-all overflow-hidden">
-            <span className="relative z-10 flex items-center gap-2">
-              <FiArrowRight className="text-lg" /> {t("common.buttons.requestConsultation")}
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#FF3816] to-[#EE7203] opacity-0 group-hover:opacity-100 transition-opacity" />
-          </button>
+  {/* 💬 Descripción */}
+  <motion.p
+    initial={{ opacity: 0, y: 15 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1.2, delay: 0.15 }}
+    className="mt-7 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed backdrop-blur-[2px]"
+  >
+    {t("home.hero.description")}
+  </motion.p>
 
-          <button className="group inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm font-bold text-white border-2 border-white/20 hover:border-[#EE7203]/50 hover:bg-white/5 backdrop-blur-sm transition-all">
-            <FiPlay className="text-lg group-hover:scale-110 transition-transform" />
-            {t("common.buttons.watchOverview")}
-          </button>
-        </motion.div>
-      </motion.div>
+  {/* 🚀 CTA */}
+  <motion.div
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1.3, delay: 0.3 }}
+    className="mt-10 relative"
+  >
+    <button
+  onClick={() => {
+    const el = document.getElementById("home-contact");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }}
+  className="group relative inline-flex items-center gap-3 px-10 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-[#EE7203] to-[#FF3816] shadow-[0_0_25px_rgba(238,114,3,0.3)] hover:shadow-[0_0_45px_rgba(238,114,3,0.6)] transition-all overflow-hidden backdrop-blur-sm"
+>
+  <span className="relative z-10 flex items-center gap-3">
+    <FiArrowRight className="text-lg group-hover:translate-x-1 transition-transform duration-300" />
+    {t("common.buttons.requestConsultation")}
+  </span>
+  <div className="absolute inset-0 bg-gradient-to-r from-[#FF3816] to-[#EE7203] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+</button>
+
+  </motion.div>
+</motion.div>
+
+
+
 
       <ParallaxGlow />
     </section>

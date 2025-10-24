@@ -71,8 +71,8 @@
   "hero": {
     "badge": "Language Consulting and Professional Development",
     "title": {
-      "prefix": "Further Corporate:",
-      "highlight": "Language Consulting and Professional Development"
+      "prefix": "Language consultant with",
+      "highlight": "+ than 25 years of experience"
     },
     "description": "Online and in-person language training. Nearly 30 years of expertise. In-company English and professional development workshops. Original in-house multimedia.",
     "imageAlt": "Professional business meeting",
@@ -87,6 +87,37 @@
       "mobile": { "years": "Years", "clients": "Clients", "students": "Students" }
     }
   },
+  "services360": {
+      "title": "Further Experience 360°",
+      "subtitle": "Discover each branch of Further in a dynamic and elegant showcase.",
+      "visitButton": "Visit site →",
+      "cards": {
+        "corporate": {
+          "title": "Further Corporate",
+          "subtitle": "Corporate Training & Consulting"
+        },
+        "academy": {
+          "title": "Further Academy",
+          "subtitle": "Online Learning for Professionals"
+        },
+        "school": {
+          "title": "Further School",
+          "subtitle": "English Education Since 1997"
+        },
+        "media": {
+          "title": "Further Media",
+          "subtitle": "Podcasts & Digital Content"
+        },
+        "tefl": {
+          "title": "Further TEFL",
+          "subtitle": "Franchise Methodology"
+        },
+        "more": {
+          "title": "Furthermore",
+          "subtitle": "English Through Play"
+        }
+      }
+    },
   "stats": {
     "yearsInBusiness": { "value": 25, "label": "Years in Business" },
     "corporatePartners": { "value": 50, "label": "Corporate Partners" },

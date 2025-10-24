@@ -69,10 +69,10 @@
   },
   "home": {
   "hero": {
-    "badge": "Consultora de idiomas y capacitación profesional",
+    "badge": "Consultora de idiomas con + de 25 años de trayectoria",
     "title": {
-      "prefix": "Further Corporate:",
-      "highlight": "Consultora de idiomas y capacitación profesional"
+      "prefix": "Consultora de idiomas con ",
+      "highlight": "+ de 25 años de trayectoria"
     },
     "description": "Clases de idiomas online y presencial. Consultora con casi 30 años de trayectoria. English in company y talleres de desarrollo profesional. Material audiovisual propio.",
     "imageAlt": "Reunión de negocios profesional",
@@ -93,6 +93,38 @@
     "corporateStudents": { "value": 3000, "label": "Estudiantes corporativos" },
     "privateStudents": { "value": 500, "label": "Estudiantes particulares" }
   },
+
+  "services360": {
+      "title": "Experiencia Further 360°",
+      "subtitle": "Descubrí cada área de Further en una experiencia dinámica y elegante.",
+      "visitButton": "Visitar sitio →",
+      "cards": {
+        "corporate": {
+          "title": "Further Corporate",
+          "subtitle": "Capacitación y consultoría corporativa"
+        },
+        "academy": {
+          "title": "Further Academy",
+          "subtitle": "Formación online para profesionales"
+        },
+        "school": {
+          "title": "Further School",
+          "subtitle": "Educación en inglés desde 1997"
+        },
+        "media": {
+          "title": "Further Media",
+          "subtitle": "Podcasts y contenido digital"
+        },
+        "tefl": {
+          "title": "Further TEFL",
+          "subtitle": "Metodología de franquicia"
+        },
+        "more": {
+          "title": "Furthermore",
+          "subtitle": "Inglés a través del juego"
+        }
+      }
+    },
   "services": {
     "title": "Servicios de idiomas",
     "intro": "La nivelación se realiza usando como guía el MCER (Marco Común Europeo) para garantizar una evaluación internacional transparente y confiable. Ofrecemos capacitación profesional, instituto de idioma y talleres a medida.",

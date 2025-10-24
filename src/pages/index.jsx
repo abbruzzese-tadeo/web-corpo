@@ -26,6 +26,8 @@ import { useTranslations, useLocale } from "next-intl";
 
 // Above-the-fold: import directo (no tocar diseño ni TTI del Hero)
 import Hero from "../componentes/home/Hero";
+import HomeContactForm from "@/componentes/home/HomeContactForm";
+
 
 // Below-the-fold: code-splitting sin cambiar diseño, con SSR para SEO
 const Services = dynamic(() => import("../componentes/home/Services"), {
@@ -180,81 +182,85 @@ function Methodology() {
 
   return (
     <section
-      id="methodology"
-      className="py-20 lg:py-28 bg-white"
-      aria-labelledby="methodology-title"
-    >
-      <div className={SHELL}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2
-              id="methodology-title"
-              className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6"
-            >
-              {t("home.methodology.title")}
-            </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              {t("home.methodology.intro")}
-            </p>
+  id="methodology"
+  className="relative py-24 lg:py-32 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
+  aria-labelledby="methodology-title"
+>
+  <div className={`${SHELL}`}>
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* === Columna de texto === */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <h2
+          id="methodology-title"
+          className="text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-6"
+        >
+          {t("home.methodology.title")}
+        </h2>
+        <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+          {t("home.methodology.intro")}
+        </p>
 
-            <div
-              className="space-y-6"
-              role="list"
-              aria-label="Methodology pillars"
+        <div className="space-y-6" role="list" aria-label="Methodology pillars">
+          {bullets.map((b, i) => (
+            <motion.div
+              key={b.title}
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="group relative flex gap-4 p-4 rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-md hover:bg-gray-50 transition"
+              role="listitem"
             >
-              {bullets.map((b, i) => (
-                <div className="flex gap-4" role="listitem" key={b.title}>
-                  <div className="w-12 h-12 rounded-lg bg-[#EE7203]/10 flex items-center justify-center flex-shrink-0">
-                    {i === 0 && (
-                      <FiTarget
-                        className="w-6 h-6 text-[#EE7203]"
-                        aria-hidden="true"
-                      />
-                    )}
-                    {i === 1 && (
-                      <FiTrendingUp
-                        className="w-6 h-6 text-[#EE7203]"
-                        aria-hidden="true"
-                      />
-                    )}
-                    {i === 2 && (
-                      <FiZap
-                        className="w-6 h-6 text-[#EE7203]"
-                        aria-hidden="true"
-                      />
-                    )}
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2">{b.title}</h3>
-                    <p className="text-gray-600 text-sm">{b.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="relative h-[500px] rounded-lg overflow-hidden shadow-xl"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
-              alt={t("home.methodology.imageAlt")}
-              className="w-full h-full object-cover"
-              loading="lazy"
-              decoding="async"
-              fetchpriority="low"
-            />
-          </motion.div>
+              {/* Línea lateral animada */}
+              <span className="absolute left-0 top-0 h-full w-1 rounded-l-xl bg-gradient-to-b from-[#EE7203] to-[#FF3816] opacity-70 group-hover:opacity-100 transition" />
+              <div className="w-12 h-12 rounded-lg bg-[#EE7203]/10 flex items-center justify-center flex-shrink-0">
+                {i === 0 && (
+                  <FiTarget className="w-6 h-6 text-[#EE7203]" aria-hidden="true" />
+                )}
+                {i === 1 && (
+                  <FiTrendingUp className="w-6 h-6 text-[#EE7203]" aria-hidden="true" />
+                )}
+                {i === 2 && (
+                  <FiZap className="w-6 h-6 text-[#EE7203]" aria-hidden="true" />
+                )}
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">{b.title}</h3>
+                <p className="text-gray-600 text-sm">{b.text}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </div>
-    </section>
+      </motion.div>
+
+      {/* === Columna con video YouTube === */}
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+  className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200"
+>
+  <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden">
+    <iframe
+      className="absolute inset-0 w-full h-full"
+      src="https://www.youtube.com/embed/NVZum4VeTw8?autoplay=1&mute=1&loop=1&controls=0&playlist=NVZum4VeTw8&rel=0"
+      title="Further Methodology Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+      loading="lazy"
+    ></iframe>
+  </div>
+</motion.div>
+
+
+    </div>
+  </div>
+</section>
+
   );
 }
 
@@ -399,6 +405,7 @@ export default function CorporateWebsite() {
           {/* Hero (no tocamos) */}
           <Hero />
 
+          
           {/* 🔽 Onda desde hero (dark) hacia contenido blanco */}
           <WaveDivider from="dark" height={80} flip />
 
@@ -421,8 +428,11 @@ export default function CorporateWebsite() {
           {/* 🔽 Onda desde secciones light hacia CTA navy */}
           <WaveDivider from="light" height={70} flip />
 
-          {/* CTA (navy) */}
-          <CTA />
+
+         {/* 🔽 Formulario de contacto embebido */}
+        <HomeContactForm  />
+
+          
         </main>
       </MotionConfig>
     </>
