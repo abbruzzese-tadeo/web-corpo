@@ -45,58 +45,42 @@ const SUB_DARK = "text-white/80";
 const SHELL = "mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8";
 
 /* ===== Ondas invertidas verticalmente ===== */
-function WaveToLight() {
+function WaveToLight({ className = "" }) {
   return (
-    <div aria-hidden className="relative">
+    <div aria-hidden className={`relative ${className}`}>
       <svg
-        className="block w-full h-20 -scale-y-100"
-        preserveAspectRatio="none"
+        className="block w-full h-20 -scale-y-100 translate-y-[1px]"
         viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        shapeRendering="geometricPrecision"
       >
-        <defs>
-          <linearGradient id="waveGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(0,0,0,0.06)" />
-            <stop offset="50%" stopColor="rgba(0,0,0,0.12)" />
-            <stop offset="100%" stopColor="rgba(0,0,0,0.06)" />
-          </linearGradient>
-        </defs>
         <path
           d="M0,0V46.29c47.79,22,103.59,29,158,17.39C256,41,312,2,376,1.5S512,39,576,55.5s128,17,192-5,128-71,192-44,128,101,240,114V0Z"
-          className="fill-white"
-        />
-        {/* Sombra sutil (neutral, sin naranja) */}
-        <path
-          d="M0,20V56.29c47.79,22,103.59,29,158,17.39C256,51,312,12,376,11.5S512,49,576,65.5s128,17,192-5,128-71,192-44,128,101,240,114V20Z"
-          fill="url(#waveGradLight)"
-          opacity="0.35"
+          fill="#FDFDFD"
         />
       </svg>
     </div>
   );
 }
-function WaveToDark() {
+
+function WaveToDark({ className = "" }) {
   return (
-    <div aria-hidden className="relative">
+    <div aria-hidden className={`relative ${className}`}>
       <svg
-        className="block w-full h-16 -scale-y-100"
+        className="block w-full h-16 -scale-y-100 translate-y-[1px]"  // 👈 se superpone 1px
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
+        shapeRendering="geometricPrecision"
       >
-        {/* base igual a School */}
         <path
           d="M1200,0V16c-61,13-122,40-183,47S792,47,713,47,550,84,471,99,315,109,236,88,77,25,0,16V0Z"
-          className="fill-[#0A1628]"
-        />
-        {/* banda complementaria */}
-        <path
-          d="M1200,10V26c-61,13-122,40-183,47S792,57,713,57,550,94,471,109,315,119,236,98,77,35,0,26V10Z"
-          className="fill-[#0C212D]"
-          opacity="0.5"
+          fill="#0A1628" // 👈 mismo color que el fondo dark siguiente
         />
       </svg>
     </div>
   );
 }
+
 
 /* ===== anim helpers ===== */
 function useAnims() {

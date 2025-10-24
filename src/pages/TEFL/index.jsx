@@ -7,6 +7,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { loadMessages } from "@/lib/i18n";
+import { WaveToDark, WaveToLight } from "@/componentes/ui/Waves";
 
 /* ====== Tokens (mismos que /nosotros) ====== */
 const BG_DARK = "bg-[#0A1628]";
@@ -51,37 +52,10 @@ function useVariants() {
   };
 }
 
-/* ====== WaveDivider invertido (mismo patrón) ====== */
-function WaveDivider({
-  from = "dark", // "dark" | "light"
-  flip = false, // si true → onda mirando hacia abajo
-  height = 72,
-  className = "",
-}) {
-  const fill = from === "dark" ? "#FFFFFF" : "#0A1628";
-  return (
-    <div
-      aria-hidden
-      className={`${className}`}
-      style={{ transform: flip ? "scaleY(-1)" : "none" }}
-    >
-      <svg
-        role="presentation"
-        focusable="false"
-        width="100%"
-        height={height}
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-        className="block w-full"
-      >
-        <path
-          d="M0 0v48c55 18 122 22 188 8 96-20 156-51 230-51 75 0 139 33 213 49 74 16 145 12 219-7 74-19 148-61 222-38 74 23 148 103 228 111V0H0Z"
-          fill={fill}
-        />
-      </svg>
-    </div>
-  );
-}
+
+
+
+
 
 /* ====== Page ====== */
 export default function TEFLIndex({ messages }) {
@@ -240,7 +214,7 @@ export default function TEFLIndex({ messages }) {
           </div>
 
           {/* 🔽 Onda invertida bajando a la sección blanca */}
-          <WaveDivider from="dark" height={78} flip />
+          <WaveToLight  />
         </section>
 
         {/* --- INTRO (blanco) --- */}
@@ -287,15 +261,16 @@ export default function TEFLIndex({ messages }) {
           </div>
 
           {/* 🔼 Onda sube a banda dark (invertida para empalmar) */}
-          <WaveDivider from="light" height={66} flip />
+          <WaveToDark  />
         </section>
 
         {/* --- CURRICULUM / CERT (dark) --- */}
         <section
-          id="curriculum"
-          className="relative z-10"
-          aria-labelledby="curriculum-title"
-        >
+  id="curriculum"
+  className="relative z-10 bg-[#0A1628] text-white"
+  aria-labelledby="curriculum-title"
+>
+
           <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24">
             <motion.div
               initial="hidden"

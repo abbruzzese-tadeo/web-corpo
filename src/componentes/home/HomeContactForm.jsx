@@ -66,7 +66,7 @@ export default function HomeContactForm() {
   return (
     <section
       id="home-contact"
-      className="bg-[#0C212D] text-white py-20 px-6 overflow-hidden"
+      className="bg-[#0A1628] text-white py-20 px-6 overflow-hidden"
       ref={ref}
     >
       <motion.div

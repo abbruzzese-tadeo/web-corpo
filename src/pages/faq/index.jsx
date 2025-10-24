@@ -6,7 +6,7 @@ import React, { useMemo } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { loadMessages } from "@/lib/i18n";
-
+import { WaveToDark, WaveToLight } from "@/componentes/ui/Waves";
 /* ============ Tokens coherentes ============ */
 const BG_DARK = "bg-[#0C212D] text-white";
 const BG_ALT = "bg-[#112C3E] text-white";
@@ -74,37 +74,7 @@ function toFaqJsonLd(items = []) {
   };
 }
 
-/* ============ Ondas invertidas (1 path, rendimiento) ============ */
-function WaveDivider({
-  from = "dark", // "dark" rellena con blanco; "light" rellena con #0C212D
-  flip = false, // true → mira hacia abajo
-  height = 72,
-  className = "",
-}) {
-  const fill = from === "dark" ? "#FFFFFF" : "#0C212D";
-  return (
-    <div
-      aria-hidden
-      className={className}
-      style={{ transform: flip ? "scaleY(-1)" : "none" }}
-    >
-      <svg
-        role="presentation"
-        focusable="false"
-        width="100%"
-        height={height}
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-        className="block w-full"
-      >
-        <path
-          d="M0 0v48c55 18 122 22 188 8 96-20 156-51 230-51 75 0 139 33 213 49 74 16 145 12 219-7 74-19 148-61 222-38 74 23 148 103 228 111V0H0Z"
-          fill={fill}
-        />
-      </svg>
-    </div>
-  );
-}
+
 
 /* ============ Página ============ */
 export default function FAQPage({ messages }) {
@@ -214,7 +184,7 @@ export default function FAQPage({ messages }) {
           </div>
 
           {/* Onda bajando a la sección blanca */}
-          <WaveDivider from="dark" height={78} flip />
+          <WaveToLight />
         </section>
 
         {/* === CONTENIDO (blanco): TOC + FAQs (details/summary accesibles) === */}
@@ -305,7 +275,7 @@ export default function FAQPage({ messages }) {
           </div>
 
           {/* Onda subiendo a CTA dark */}
-          <WaveDivider from="light" height={66} flip />
+          <WaveToDark />
         </section>
 
         {/* === CTA final (dark alt) === */}

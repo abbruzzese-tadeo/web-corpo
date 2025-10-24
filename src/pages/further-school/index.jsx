@@ -299,7 +299,7 @@ export default function FurtherSchoolPage({ messages }) {
 
   {/* Onda decorativa hacia secciones blancas */}
 </section>
-  <WaveDivider from="dark" height={78} flip />
+  <WaveDivider from="dark" height={78} flip className="-mb-[1px]"/>
 
           {/* === FEATURES (blanco) === */}
           <section
@@ -356,7 +356,7 @@ export default function FurtherSchoolPage({ messages }) {
             </div>
 
             {/* Onda de vuelta al azul (mismo tono) */}
-            <WaveDivider from="light" height={66} flip />
+            <WaveDivider from="light" height={66} flip className="-mb-[1px]" />
           </section>
 
           {/* === LOGO CLOUD (dark, mismo azul) === */}
@@ -529,7 +529,7 @@ export default function FurtherSchoolPage({ messages }) {
             </div>
 
             {/* Onda subiendo a CTA (mismo azul) */}
-            <WaveDivider from="light" height={66} flip />
+            <WaveDivider from="light" height={66} flip className="-mb-[1px]"/>
           </section>
 
           {/* === CTA BAR (mismo azul) === */}

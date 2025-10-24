@@ -520,7 +520,7 @@ export default function ContactPage({ messages }) {
         </section>
 
         {/* === CTA final (dark alt) === */}
-        <section className={`${BG_ALT}`} aria-labelledby="contact-cta-title">
+        <section className={`${BG_DARK}`} aria-labelledby="contact-cta-title">
           <div className={`${SHELL} py-16`}>
             <div
               className={`${CARD_DARK} p-8 md:p-10 relative overflow-hidden`}

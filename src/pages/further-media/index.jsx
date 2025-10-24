@@ -6,7 +6,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { loadMessages } from "@/lib/i18n";
-
+import { WaveToDark, WaveToLight } from "@/componentes/ui/Waves";
 /* ========= Tokens ========= */
 const BG_DARK = "bg-[#0A1628] text-white"; // hero igual al navbar (más oscuro)
 const BG_BLUE = "bg-[#0A1628] text-white"; // azul igual al Footer
@@ -39,36 +39,6 @@ function toYouTubeEmbedSrc(idOrUrl = "") {
     : `https://www.youtube.com/embed/${idOrUrl}`;
 }
 
-/* ===== Wave con color explícito (matchea la banda siguiente) ===== */
-function WaveDivider({
-  color = "#FFFFFF",
-  flip = false,
-  height = 72,
-  className = "",
-}) {
-  return (
-    <div
-      aria-hidden
-      className={className}
-      style={{ transform: flip ? "scaleY(-1)" : "none" }}
-    >
-      <svg
-        role="presentation"
-        focusable="false"
-        width="100%"
-        height={height}
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-        className="block w-full"
-      >
-        <path
-          d="M0 0v48c55 18 122 22 188 8 96-20 156-51 230-51 75 0 139 33 213 49 74 16 145 12 219-7 74-19 148-61 222-38 74 23 148 103 228 111V0H0Z"
-          fill={color}
-        />
-      </svg>
-    </div>
-  );
-}
 
 /* ===== Defaults ===== */
 const DEFAULT_BLUBRRY =
@@ -276,7 +246,7 @@ export default function FurtherMediaPage({ messages }) {
           </div>
 
           {/* Baja a sección blanca */}
-          <WaveDivider color="#FFFFFF" height={78} flip />
+          <WaveToLight />
         </section>
 
         {/* === INTRO (blanco) === */}
@@ -327,7 +297,7 @@ export default function FurtherMediaPage({ messages }) {
           </div>
 
           {/* Sube a banda azul (PODCAST) — color Footer */}
-          <WaveDivider color="#0A1628" height={66} flip />
+          <WaveToDark />
         </section>
 
         {/* === PODCAST (Blubrry) — azul Footer, iframe limpio === */}
@@ -391,7 +361,7 @@ export default function FurtherMediaPage({ messages }) {
           </div>
 
           {/* Hacia Apps (blanco) */}
-          <WaveDivider color="#FFFFFF" height={66} flip />
+          <WaveToLight/>
         </section>
 
         {/* === APPS (blanco) con logos === */}
@@ -444,7 +414,7 @@ export default function FurtherMediaPage({ messages }) {
           </div>
 
           {/* Sube a CLASSES (azul Footer) */}
-          <WaveDivider color="#0A1628" height={66} flip />
+          <WaveToDark />
         </section>
 
         {/* === CLASSES (azul Footer) === */}
@@ -515,7 +485,7 @@ export default function FurtherMediaPage({ messages }) {
           </div>
 
           {/* Hacia TikTok (blanco) */}
-          <WaveDivider color="#FFFFFF" height={66} flip />
+          <WaveToLight/>
         </section>
 
         {/* === TIKTOK (blanco) === */}
@@ -574,7 +544,7 @@ export default function FurtherMediaPage({ messages }) {
           </div>
 
           {/* Sube a CTA final (azul Footer) */}
-          <WaveDivider color="#0A1628" height={66} flip />
+          <WaveToDark />
         </section>
 
         {/* === CTA final (azul Footer) === */}

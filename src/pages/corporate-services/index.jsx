@@ -564,7 +564,7 @@ export default function CorporateIndex({ messages }) {
             </div>
 
             {/* Wave hacia el bloque blanco (invertida vertical) */}
-            <WaveToLight />
+            <WaveToLight className="-mb-[1px]" />
           </section>
 
           {/* BLOQUE BLANCO (Stats + Logos) */}
@@ -619,7 +619,7 @@ export default function CorporateIndex({ messages }) {
             </div>
 
             {/* Wave de regreso al dark (invertida vertical) */}
-            <WaveToDark />
+            <WaveToDark className="-mb-[1px]" />
           </section>
 
           {/* SERVICES */}

@@ -65,57 +65,43 @@ function Badge({ children, type = "default", tone = "dark" }) {
 }
 
 /* ===== Ondas invertidas verticalmente ===== */
-function WaveToLight() {
+function WaveToLight({ className = "" }) {
   return (
-    <div aria-hidden className="relative">
+    <div aria-hidden className={`relative ${className}`}>
       <svg
-        className="block w-full h-20 -scale-y-100"
-        preserveAspectRatio="none"
+        className="block w-full h-20 -scale-y-100 translate-y-[1px]"  // 👈 fijate esta línea
         viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
       >
-        <defs>
-          <linearGradient id="waveGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.06)" />
-            <stop offset="50%" stopColor="rgba(255,255,255,0.12)" />
-            <stop offset="100%" stopColor="rgba(255,255,255,0.06)" />
-          </linearGradient>
-        </defs>
         <path
           d="M0,0V46.29c47.79,22,103.59,29,158,17.39C256,41,312,2,376,1.5S512,39,576,55.5s128,17,192-5,128-71,192-44,128,101,240,114V0Z"
-          className="fill-white"
-        />
-        <path
-          d="M0,20V56.29c47.79,22,103.59,29,158,17.39C256,51,312,12,376,11.5S512,49,576,65.5s128,17,192-5,128-71,192-44,128,101,240,114V20Z"
-          fill="url(#waveGradLight)"
-          opacity="0.55"
+          fill="#FFFFFF"
         />
       </svg>
     </div>
   );
 }
-function WaveToDark() {
+
+
+function WaveToDark({ className = "" }) {
   return (
-    <div aria-hidden className="relative">
+    <div aria-hidden className={`relative ${className}`}>
       <svg
-        className="block w-full h-16 -scale-y-100"
+        className="block w-full h-16 -scale-y-100 translate-y-[1px]"  // 👈 se superpone 1px
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
+        shapeRendering="geometricPrecision"
       >
-        {/* base igual a School */}
         <path
           d="M1200,0V16c-61,13-122,40-183,47S792,47,713,47,550,84,471,99,315,109,236,88,77,25,0,16V0Z"
-          className="fill-[#0A1628]"
-        />
-        {/* segunda banda tono complementario */}
-        <path
-          d="M1200,10V26c-61,13-122,40-183,47S792,57,713,57,550,94,471,109,315,119,236,98,77,35,0,26V10Z"
-          className="fill-[#0C212D]"
-          opacity="0.5"
+          fill="#0A1628" // 👈 mismo color que el fondo dark siguiente
         />
       </svg>
     </div>
   );
 }
+
+
 
 /* ====== Page ====== */
 export default function AcademyPage({ messages }) {
@@ -239,10 +225,11 @@ export default function AcademyPage({ messages }) {
         </header>
 
         {/* ---- Onda hacia bloque blanco (invertida) ---- */}
-        <WaveToLight />
+        <WaveToLight className="-mb-[1px]" />
 
         {/* ===== BLOQUE CLARO (misma info, estilos light) ===== */}
-        <section className={LIGHT_WRAP}>
+       <section className="bg-white text-gray-900">
+
           {/* TRUST */}
           <div className={`${WRAP} py-12 sm:py-16`}>
             <div className="flex items-center gap-3 mb-6">
@@ -538,7 +525,7 @@ export default function AcademyPage({ messages }) {
           </div>
 
           {/* ---- Onda de regreso al oscuro (invertida) ---- */}
-          <WaveToDark />
+          <WaveToDark className="-mb-[1px]"/>
         </section>
 
         {/* ===== FOOT PAD (oscuro) ===== */}
