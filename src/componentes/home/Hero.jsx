@@ -82,7 +82,7 @@ export default function Hero() {
     className="relative text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]"
   >
     {t("home.hero.title.prefix")}{" "}
-    <span className="relative inline-block">
+    <span className="relative inline">
       <span className="bg-gradient-to-r from-[#EE7203] via-[#FF3816] to-[#EE7203] bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent">
         {t("home.hero.title.highlight")}
       </span>
