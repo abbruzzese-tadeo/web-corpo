@@ -174,23 +174,41 @@
     "subtitle": "Dynamic, refreshing classes with an immersive cultural focus",
     "items": [
       {
-        "quote": "The cultural approach and constant practice helped our team communicate confidently in English.",
-        "name": "María González",
-        "role": "HR Director",
-        "company": "Tech Solutions SA"
-      },
-      {
-        "quote": "Further’s own materials and day-to-day activities are ideal for busy professionals.",
-        "name": "Carlos Rodríguez",
-        "role": "Training Manager",
-        "company": "Global Industries"
-      },
-      {
-        "quote": "Further Media kept learning alive between classes. Highly recommended.",
-        "name": "Laura Martínez",
-        "role": "CEO",
-        "company": "Innovation Group"
-      }
+      "quote": "The cultural approach and constant practice helped our team build real confidence when communicating in English.",
+      "name": "María González",
+      "role": "HR Director",
+      "company": "Tech Solutions SA"
+    },
+    {
+      "quote": "Original materials and activities designed for daily use. Perfect for professionals with demanding schedules.",
+      "name": "Carlos Rodríguez",
+      "role": "Training Manager",
+      "company": "Global Industries"
+    },
+    {
+      "quote": "Further Media’s resources helped us maintain learning consistency between classes. Highly recommended.",
+      "name": "Laura Martínez",
+      "role": "CEO",
+      "company": "Innovation Group"
+    },
+    {
+      "quote": "A highly reliable team, fully committed to their students’ learning process. Strongly recommended.",
+      "name": "Marcelo",
+      "role": "Supervising Associate",
+      "company": "EY"
+    },
+    {
+      "quote": "Further’s translation service was fast, precise, and high-quality. They turned a complex academic paper into a flawless result.",
+      "name": "Mariano",
+      "role": "Professor",
+      "company": "Universidad Torcuato Di Tella"
+    },
+    {
+      "quote": "Working with Further has always been an excellent experience. A professional team deeply committed to student learning.",
+      "name": "Agustín",
+      "role": "Training Specialist",
+      "company": "Human Resources – Accenture"
+    }
     ]
   },
   "cta": {

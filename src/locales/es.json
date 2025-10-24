@@ -174,25 +174,43 @@
     "title": "La #ExperienciaFurther",
     "subtitle": "Clases dinámicas y frescas con enfoque cultural e inmersivo",
     "items": [
-      {
-        "quote": "El enfoque cultural y la práctica constante generaron confianza real en el equipo al comunicarse en inglés.",
-        "name": "María González",
-        "role": "Directora de RR. HH.",
-        "company": "Tech Solutions SA"
-      },
-      {
-        "quote": "Material propio y actividades pensadas para el día a día. Ideal para profesionales con agendas exigentes.",
-        "name": "Carlos Rodríguez",
-        "role": "Gerente de Capacitación",
-        "company": "Global Industries"
-      },
-      {
-        "quote": "Los recursos de Further Media nos ayudaron a sostener el aprendizaje entre clases. Muy recomendados.",
-        "name": "Laura Martínez",
-        "role": "CEO",
-        "company": "Innovation Group"
-      }
-    ]
+    {
+      "quote": "El enfoque cultural y la práctica constante generaron confianza real en todo el equipo al comunicarse en inglés.",
+      "name": "María González",
+      "role": "Directora de RR. HH.",
+      "company": "Tech Solutions SA"
+    },
+    {
+      "quote": "Material propio y actividades diseñadas para el día a día. Ideal para profesionales con agendas exigentes.",
+      "name": "Carlos Rodríguez",
+      "role": "Gerente de Capacitación",
+      "company": "Global Industries"
+    },
+    {
+      "quote": "Los recursos de Further Media nos ayudaron a sostener el aprendizaje entre clases. Muy recomendados.",
+      "name": "Laura Martínez",
+      "role": "CEO",
+      "company": "Innovation Group"
+    },
+    {
+      "quote": "Un equipo altamente confiable y comprometido con el aprendizaje de sus alumnos. Altamente recomendables.",
+      "name": "Marcelo",
+      "role": "Supervising Associate",
+      "company": "EY"
+    },
+    {
+      "quote": "La traducción del equipo de Further fue rápida, precisa y de gran calidad. Convirtieron un paper técnico en un trabajo impecable.",
+      "name": "Mariano",
+      "role": "Profesor",
+      "company": "Universidad Torcuato Di Tella"
+    },
+    {
+      "quote": "Trabajar con Further siempre fue una excelente experiencia. Un equipo profesional y comprometido con el aprendizaje de sus estudiantes.",
+      "name": "Agustín",
+      "role": "Especialista en capacitación",
+      "company": "Recursos Humanos – Accenture"
+    }
+  ]
   },
   "cta": {
     "title": "Abrí las puertas del Universo FURTHER",
