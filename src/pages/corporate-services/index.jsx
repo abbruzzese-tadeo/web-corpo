@@ -12,6 +12,7 @@ import {
   useMotionValue,
 } from "framer-motion";
 import { loadMessages } from "@/lib/i18n";
+import { WaveToDark, WaveToLight } from "@/componentes/ui/Waves";
 
 /* ==============================
    Design Tokens (dark + light)
@@ -181,63 +182,7 @@ function GridPattern() {
    Wave Dividers (invertidas verticalmente)
    ============================== */
 // Hacia sección clara (dark → light)
-function WaveToLight() {
-  return (
-    <div aria-hidden className="relative">
-      <svg
-        className="block w-full h-20 -scale-y-100 text-white"
-        preserveAspectRatio="none"
-        viewBox="0 0 1200 120"
-      >
-        <defs>
-          <linearGradient
-            id="waveGradientLight"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="0%"
-          >
-            <stop offset="0%" stopColor="rgba(255,255,255,0.05)" />
-            <stop offset="50%" stopColor="rgba(255,255,255,0.1)" />
-            <stop offset="100%" stopColor="rgba(255,255,255,0.05)" />
-          </linearGradient>
-        </defs>
-        <path
-          d="M0,0V46.29c47.79,22,103.59,29,158,17.39C256,41,312,2,376,1.5S512,39,576,55.5s128,17,192-5,128-71,192-44,128,101,240,114V0Z"
-          className="fill-white"
-        />
-        <path
-          d="M0,20V56.29c47.79,22,103.59,29,158,17.39C256,51,312,12,376,11.5S512,49,576,65.5s128,17,192-5,128-71,192-44,128,101,240,114V20Z"
-          fill="url(#waveGradientLight)"
-          opacity="0.5"
-        />
-      </svg>
-    </div>
-  );
-}
 
-// Regreso a sección oscura (light → dark)
-function WaveToDark() {
-  return (
-    <div aria-hidden className="relative">
-      <svg
-        className="block w-full h-16 -scale-y-100"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M1200,0V16c-61,13-122,40-183,47S792,47,713,47,550,84,471,99,315,109,236,88,77,25,0,16V0Z"
-          className="fill-[#0A1628]"
-        />
-        <path
-          d="M1200,10V26c-61,13-122,40-183,47S792,57,713,57,550,94,471,109,315,119,236,98,77,35,0,26V10Z"
-          className="fill-[#0C212D]"
-          opacity="0.5"
-        />
-      </svg>
-    </div>
-  );
-}
 
 /* ==============================
    Main Page
@@ -594,32 +539,76 @@ export default function CorporateIndex({ messages }) {
                 ))}
               </motion.div>
 
-              <motion.div
-                variants={itemFade}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="mt-16 text-center"
-              >
-                <p className="text-sm uppercase tracking-wider font-semibold text-gray-500 mb-6">
-                  Trusted by leading organizations
-                </p>
-                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
-                  {Array.from({ length: 6 }).map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="rounded-2xl border border-gray-200 bg-white h-16 flex items-center justify-center text-gray-400 text-xs font-medium hover:text-gray-700 hover:shadow-md transition-all"
-                      whileHover={{ scale: 1.03, y: -2 }}
-                    >
-                      Client {i + 1}
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
+              {/* BLOQUE DE LOGOS — CARRUSEL INFINITO CON PAUSA */}
+<motion.div
+  variants={itemFade}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  className="mt-20 text-center overflow-hidden select-none"
+>
+  <p className="text-sm uppercase tracking-wider font-semibold text-gray-500 mb-10">
+    Trusted by leading organizations
+  </p>
+
+  {/* Wrapper que detecta hover */}
+  <div className="relative w-full overflow-hidden group py-6">
+    <motion.div
+      className="flex gap-20 items-center"
+      animate={{ x: ["0%", "-50%"] }}
+      transition={{
+        ease: "linear",
+        duration: 40, // 🔹 más alto = más lento
+        repeat: Infinity,
+      }}
+      whileHover={{}} // necesario para framer-motion
+      onHoverStart={(e, info) => e.target.pauseAnimation?.()} // fallback seguro
+    >
+      {/* Duplicamos el set de logos para crear el loop infinito */}
+      {[
+        "/images/logos/accenture.png",
+      "/images/logos/boca.png",
+      "/images/logos/egger.png",
+      "/images/logos/manpower.png",
+      "/images/logos/merck.png",
+      "/images/logos/mirgor.png",
+      "/images/logos/nosis.png",
+      ]
+        .concat([
+          "/images/logos/accenture.png",
+      "/images/logos/boca.png",
+      "/images/logos/egger.png",
+      "/images/logos/manpower.png",
+      "/images/logos/merck.png",
+      "/images/logos/mirgor.png",
+      "/images/logos/nosis.png",
+        ])
+        .map((src, i) => (
+          <motion.div
+            key={i}
+            className="flex-shrink-0 h-28 sm:h-32 md:h-40 w-48 sm:w-56 md:w-64 flex items-center justify-center"
+            whileHover={{ scale: 1.08 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img
+              src={src}
+              alt={`Client logo ${i + 1}`}
+              className="max-h-24 sm:max-h-28 md:max-h-32 mx-auto grayscale hover:grayscale-0 opacity-85 hover:opacity-100 transition-all duration-500 object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+          </motion.div>
+        ))}
+    </motion.div>
+  </div>
+</motion.div>
+
+
+
             </div>
 
             {/* Wave de regreso al dark (invertida vertical) */}
-            <WaveToDark className="-mb-[1px]" />
+            <WaveToDark  />
           </section>
 
           {/* SERVICES */}
