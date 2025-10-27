@@ -251,111 +251,154 @@ export default function AboutIndex({ messages }) {
           </section>
         )}
 
-        {/* --- MEDIA --- */}
-        {(media?.title || media?.text) && (
-          <section id="media" className="relative z-10">
-            <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24 text-center">
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={stagger}
-              >
-                <motion.h3
-                  variants={fadeUp}
-                  className={`${TITLE_DARK} text-3xl sm:text-4xl mb-4`}
-                >
-                  {media?.title}
-                </motion.h3>
-                {media?.text && (
-                  <motion.p
-                    variants={fadeUp}
-                    className={`${SUB_DARK} text-lg max-w-2xl mx-auto`}
-                  >
-                    {media.text}
-                  </motion.p>
-                )}
-              </motion.div>
-            </div>
-          </section>
-        )}
+      
 
-        {/* --- TESTIMONIALS --- */}
-        {Array.isArray(testimonials?.items) &&
-          testimonials.items.length > 0 && (
-            <section
-              aria-labelledby="testimonials-title"
-              className="relative z-10"
+{/* --- MEDIA (siempre visible, con fallbacks) --- */}
+<section id="media" className="relative z-10">
+  <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24 text-center">
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={stagger}
+    >
+      {/* Título (fallback si no viene en i18n) */}
+      <motion.h3
+        variants={fadeUp}
+        className={`${TITLE_DARK} text-3xl sm:text-4xl mb-4`}
+      >
+        {media?.title || "Further Media"}
+      </motion.h3>
+
+      {/* Texto (fallback) */}
+      <motion.p
+        variants={fadeUp}
+        className={`${SUB_DARK} text-lg max-w-2xl mx-auto mb-10`}
+      >
+        {media?.text || "Historias, podcasts y clips para aprender jugando."}
+      </motion.p>
+
+      {/* Video de YouTube – wrapper estable (padding hack) */}
+     <motion.div
+  variants={fadeUp}
+  className="relative max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl mb-10 border border-white/10"
+>
+  <div className="relative" style={{ paddingTop: "56.25%" }}>
+    <iframe
+      src="https://www.youtube.com/embed/NSaMDoGdA60"
+      title="Further Media video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+      className="absolute inset-0 w-full h-full rounded-2xl"
+    />
+  </div>
+</motion.div>
+
+      {/* Botón CTA (fallback) */}
+      <motion.div variants={fadeUp}>
+        <a
+          href="/further-media"
+          className="group relative inline-flex items-center gap-3 px-10 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-[#EE7203] to-[#FF3816] shadow-[0_0_25px_rgba(238,114,3,0.3)] hover:shadow-[0_0_45px_rgba(238,114,3,0.6)] transition-all overflow-hidden backdrop-blur-sm"
+        >
+          {media?.ctaLabel || "Visit Further Media"} →
+        </a>
+      </motion.div>
+    </motion.div>
+  </div>
+  <WaveToLight  />
+</section>
+
+
+
+
+      {/* --- TESTIMONIALS (light version) --- */}
+{Array.isArray(testimonials?.items) && testimonials.items.length > 0 && (
+  <section
+    aria-labelledby="testimonials-title"
+    className="relative z-10 bg-white text-gray-900"
+  >
+    <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={stagger}
+      >
+        {/* Título y subtítulo */}
+        <motion.div variants={fadeUp} className="text-center mb-12">
+          <h3
+            id="testimonials-title"
+            className={`${TITLE_LIGHT} text-3xl sm:text-4xl`}
+          >
+            {testimonials?.title}
+          </h3>
+          {testimonials?.subtitle && (
+            <p
+              className={`${SUB_LIGHT} text-lg max-w-2xl mx-auto mt-3`}
             >
-              <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24">
-                <motion.div
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.2 }}
-                  variants={stagger}
-                >
-                  <motion.div variants={fadeUp} className="text-center mb-12">
-                    <h3
-                      id="testimonials-title"
-                      className={`${TITLE_DARK} text-3xl sm:text-4xl`}
-                    >
-                      {testimonials?.title}
-                    </h3>
-                    {testimonials?.subtitle && (
-                      <p
-                        className={`${SUB_DARK} text-lg max-w-2xl mx-auto mt-3`}
-                      >
-                        {testimonials.subtitle}
-                      </p>
-                    )}
-                  </motion.div>
-
-                  <div className="grid gap-8 md:grid-cols-2">
-                    {testimonials.items.map((it, idx) => (
-                      <motion.blockquote
-                        key={idx}
-                        variants={fadeUp}
-                        className={`${CARD_GLASS} p-8 relative`}
-                      >
-                        <div className="absolute top-6 left-6 text-6xl font-serif text-white/10 leading-none">
-                          "
-                        </div>
-                        {it?.quote && (
-                          <p className="text-white/90 leading-relaxed text-base relative z-10 pt-8">
-                            {it.quote}
-                          </p>
-                        )}
-                        <footer className="mt-6 pt-6 border-t border-white/10">
-                          <div className="flex items-center gap-4">
-                            <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#EE7203] to-[#FF3816] flex items-center justify-center text-white font-bold">
-                              {(it?.name || "?").charAt(0)}
-                            </div>
-                            <div>
-                              {it?.name && (
-                                <div className="font-semibold text-white">
-                                  {it.name}
-                                </div>
-                              )}
-                              {it?.role && (
-                                <div className="text-sm text-white/70">
-                                  {it.role}
-                                </div>
-                              )}
-                              {it?.company && (
-                                <div className="text-sm text-white/50">
-                                  {it.company}
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        </footer>
-                      </motion.blockquote>
-                    ))}
-                  </div>
-                </motion.div>
-              </div>
-            </section>
+              {testimonials.subtitle}
+            </p>
           )}
+          {/* Línea decorativa */}
+          <div className="mt-5 w-16 h-1.5 mx-auto rounded-full bg-gradient-to-r from-[#EE7203] to-[#FF3816]" />
+        </motion.div>
+
+        {/* Cards de testimonios */}
+        <div className="grid gap-8 md:grid-cols-2">
+          {testimonials.items.map((it, idx) => (
+            <motion.blockquote
+              key={idx}
+              variants={fadeUp}
+              className="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              {/* Comillas decorativas */}
+              <div className="absolute top-6 left-6 text-6xl font-serif text-[#EE7203]/25 leading-none select-none">
+  "
+</div>
+
+
+              {/* Texto del testimonio */}
+              {it?.quote && (
+                <p className="text-gray-700 leading-relaxed text-base relative z-10 pt-8">
+                  {it.quote}
+                </p>
+              )}
+
+              {/* Footer del testimonio */}
+              <footer className="mt-6 pt-6 border-t border-gray-100">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#EE7203] to-[#FF3816] flex items-center justify-center text-white font-bold">
+                    {(it?.name || "?").charAt(0)}
+                  </div>
+                  <div>
+                    {it?.name && (
+                      <div className="font-semibold text-gray-900">
+                        {it.name}
+                      </div>
+                    )}
+                    {it?.role && (
+                      <div className="text-sm text-gray-600">
+                        {it.role}
+                      </div>
+                    )}
+                    {it?.company && (
+                      <div className="text-sm text-gray-500">
+                        {it.company}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </footer>
+            </motion.blockquote>
+          ))}
+        </div>
+      </motion.div>
+    </div>
+    <WaveToDark  />
+  </section>
+)}
+
 
         {/* --- CTA --- */}
         {cta?.button && (
