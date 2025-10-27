@@ -362,31 +362,46 @@
   "school": {
   "meta": {
     "title": "Further School of Languages — Learning English Since 1997",
-    "description": "In-person and online English lessons for all ages. Cambridge and TOEFL preparation. Dynamic methodology, expert teachers, and measurable results."
+    "description": "In-person and online English lessons for all ages. Cambridge and TOEFL preparation courses."
   },
   "hero": {
     "title": "Further School of Languages:",
-    "subtitle": "Learning English Since 1997"
+    "subtitle": "Learning English Since 1997",
+    "badge": "Learn English with Us",
+    "imageSrc": "/images/bg-tefl.jpeg",
+    "imageAlt": "English classroom"
+  },
+  "why": {
+    "title": "Why Further?"
   },
   "sections": {
     "fun": {
       "title": "Learn English the Fun Way",
-      "body": "At Further School, learning English is a dynamic and engaging experience. Our classes integrate games, creative projects, and real-life situations so students can speak naturally from day one."
+      "body": "Our classes are anything but boring. Interactive, engaging, and full of creativity."
     },
     "park": {
       "title": "English School in Parque Patricios",
-      "body": "We offer in-person lessons in Parque Patricios and live online classes. Our programs are designed for kids, teens, and adults, with small groups and personalized attention."
+      "body": "Further School of Languages offers both in-person and online English classes with a personalized approach."
     },
     "culture": {
-      "body": "We see language as part of culture. That’s why we use music, film, podcasts, and authentic materials to bring real English into the classroom."
+      "kicker": "Our Methodology",
+      "title": "Culture and Real Communication",
+      "highlight": "Living Context",
+      "body": "We understand language as part of culture. We promote music, film, and real conversation.",
+      "points": [
+        "Conversational focus",
+        "Real-world projects",
+        "Continuous feedback",
+        "Music and film as learning tools"
+      ]
     }
   },
   "exams": {
     "title": "International Exam Preparation",
-    "expertIntro": "We specialize in preparation for international English certifications:",
+    "expertIntro": "We specialize in preparation for:",
     "cambridgeTitle": "Cambridge English Exams",
-    "cambridge": ["Starters", "Movers", "Flyers", "KET (A2 Key)", "PET (B1 Preliminary)", "FCE (B2 First)", "CAE (C1 Advanced)", "CPE (C2 Proficiency)", "IELTS"],
-    "usTitle": "American English Exams",
+    "cambridge": ["FCE", "CAE", "CPE", "IELTS", "BEC", "BULATS"],
+    "usTitle": "US English Exams",
     "toefl": "TOEFL: Test of English as a Foreign Language"
   },
   "instagram": {
@@ -394,12 +409,17 @@
     "title": "Further School",
     "followLabel": "Follow",
     "loadMore": "Load more",
-    "widgetCredit": "Free Instagram widget",
+    "widgetCredit": "Free Instagram Feed widget",
+    "ctaBody": "We bring freshness into our lessons by incorporating play, spontaneity, and natural interaction as core tools.",
     "cta": "Visit us on Instagram",
-    "ctaBody": "We bring freshness into learning by incorporating play, spontaneity, and curiosity as essential tools to unlock every student’s potential.",
     "href": "https://www.instagram.com/furtherlanguages/"
+  },
+  "testimonials": {
+    "title": "What Our Students Say",
+    "subtitle": "Real results, measurable progress."
   }
 },
+
 
   "furthermore": {
   "meta": {
@@ -447,34 +467,102 @@
   }
 },
 
-  "tefl": {
+"tefl": {
   "meta": {
     "title": "TEFL — Teaching English as a Foreign Language",
-    "description": "Become a certified English teacher with international recognition. Train in Buenos Aires with real classroom practice and professional mentoring from Further Corporate."
+    "description": "Become an English teacher and work abroad with Further Corporate."
   },
-  "hero": { 
-    "title": "TEFL:", 
-    "subtitle": "Teaching English as a Foreign Language" 
+  "hero": {
+    "badge": "TEFL Program",
+    "title": "TEFL:",
+    "subtitle": "Teaching English as a Foreign Language",
+    "description": "Travel the world while teaching English. Live and work in Buenos Aires, one of South America's most beautiful cities.",
+    "imageSrc": "/images/bg-tefl.jpeg",
+    "imageAlt": "TEFL classroom"
   },
+  "tracks": {
+    "title": "Program Tracks",
+    "items": [
+      {
+        "title": "Global Foundations",
+        "body": "Core TEFL theory, teaching frameworks and classroom management to start confidently.",
+        "pill": "Core"
+      },
+      {
+        "title": "Assessment & CEFR",
+        "body": "Design evaluations aligned to CEFR and track measurable progress from A1 to C2.",
+        "pill": "Standards"
+      },
+      {
+        "title": "Practice & Delivery",
+        "body": "Micro-teaching, feedback cycles and reflective practice for real classroom impact.",
+        "pill": "Practice"
+      }
+    ]
+  },
+  "video": {
+  "heading": "Become an English teacher",
+  "subheading": "and expand your career opportunities",
+  "lead": "Have you ever dreamed of teaching English abroad?",
+  "description": "Our TEFL course provides the essential tools to teach English to non-native speakers. Includes hands-on practice, modern methodology, and career opportunities with Further Corporate.",
+  "videoUrl": "https://www.youtube.com/embed/lS8_TU-yAr4"
+},
+
   "blocks": {
     "workAbroad": {
-      "title": "Become an English teacher and open new career horizons",
-      "lead": "Dreaming of teaching English and traveling the world?",
-      "body": "Our TEFL course provides the tools and techniques to teach English to non-native speakers. It includes hands-on training, modern methodology, and job opportunities within Further Corporate.",
-      "logoAlt": "TEFL by Further logo",
-      "logoSrc": "/images/tefl-logo.png"
+      "lead": "A hands-on approach to planning, delivery, and evaluation."
     },
     "cert": {
-      "title": "Get certified with TEFL by Further.",
-      "body1": "Learn how to plan effective lessons, assess progress, and adapt materials for different levels. Upon completion, you'll be eligible to apply for teaching positions with us.",
-      "body2": "The course includes real classroom observations, case analysis, and strategies for integrating audiovisual and digital resources."
+      "title": "Certification & Methodology",
+      "body1": "Learn frameworks like Communicative Approach, TBL, PPP, and solid assessment practices.",
+      "body2": "Plan effective lessons, manage classrooms, and measure real learning outcomes.",
+      "logos": [
+      ]
     }
   },
-  "closing": {
-    "title": "Develop your teaching skills and teach English with TEFL by Further"
+  "steps": {
+    "title": "How it works",
+    "items": [
+      {
+        "title": "Diagnostic & Goals",
+        "body": "We map initial level and objectives to tailor the plan."
+      },
+      {
+        "title": "Training & Micro-teaching",
+        "body": "Hands-on workshops with guided feedback and real-time classroom simulation."
+      },
+      {
+        "title": "Evaluation & Next Steps",
+        "body": "Portfolio + performance review with concrete outcomes and feedback."
+      }
+    ]
   },
-  "media": { "videoId": "lS8_TU-yAr4" }
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Do I need previous experience?",
+        "a": "No. We start from the fundamentals of teaching methodology and guided practice."
+      },
+      {
+        "q": "Is this an international certification?",
+        "a": "Yes. Our program follows CEFR standards and prepares you to teach worldwide."
+      },
+      {
+        "q": "Can I work right after finishing?",
+        "a": "Yes. Graduates are eligible to work within Further Corporate or partner institutions."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to kick-off your TEFL journey?",
+    "subtitle": "Join our next certification and begin your teaching career.",
+    "button": "Apply Now",
+    "href": "/contacto"
+  }
 },
+
+
 
 "furtherMedia": {
   "meta": {

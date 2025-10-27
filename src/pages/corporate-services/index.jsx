@@ -397,30 +397,48 @@ export default function CorporateIndex({ messages }) {
   const onChange = (e) =>
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    if (!form.name.trim())
-      return setStatus({
-        state: "error",
-        error: "Please enter your full name.",
-      });
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      return setStatus({ state: "error", error: forms.invalidEmail });
-    if (form.message.trim().length < 10)
-      return setStatus({
-        state: "error",
-        error: "Please provide more details (10+ characters).",
-      });
+  // dentro del componente CorporateIndex()
+const onSubmit = async (e) => {
+  e.preventDefault();
 
-    try {
-      setStatus({ state: "sending", error: "" });
-      await new Promise((r) => setTimeout(r, 800));
-      setStatus({ state: "ok", error: "" });
-      setForm({ name: "", email: "", phone: "", message: "" });
-    } catch {
-      setStatus({ state: "error", error: forms.error });
+  if (!form.name.trim())
+    return setStatus({ state: "error", error: "Please enter your full name." });
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
+    return setStatus({ state: "error", error: forms.invalidEmail });
+  if (form.message.trim().length < 10)
+    return setStatus({
+      state: "error",
+      error: "Please provide more details (10+ characters).",
+    });
+
+  try {
+    setStatus({ state: "sending", error: "" });
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...form,
+        origin: "Further Corporate", // 👈 aquí definís el origen
+      }),
+    });
+
+    if (!res.ok) {
+      const data = await res.json();
+      throw new Error(data.error || "Mail send failed");
     }
-  };
+
+    setStatus({ state: "ok", error: "" });
+    setForm({ name: "", email: "", phone: "", message: "" });
+  } catch (err) {
+    console.error("❌ Error sending contact:", err);
+    setStatus({
+      state: "error",
+      error: forms.error || "Something went wrong. Please try again.",
+    });
+  }
+};
+
 
   return (
     <>

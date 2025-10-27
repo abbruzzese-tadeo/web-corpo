@@ -58,6 +58,25 @@ function SpotifyIcon(props) {
     </svg>
   );
 }
+
+function YouTubeMusicIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      {...props}
+    >
+      {/* Círculo rojo */}
+      <circle cx="12" cy="12" r="10" fill="#FF0000" />
+      {/* Anillo blanco */}
+      <circle cx="12" cy="12" r="6.5" fill="none" stroke="#fff" strokeWidth="1.6" />
+      {/* Triángulo blanco central */}
+      <polygon points="10,8.5 10,15.5 15,12" fill="#fff" />
+    </svg>
+  );
+}
+
+
 function AmazonMusicIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -377,17 +396,17 @@ export default function FurtherMediaPage({ messages }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <a
-                href={t?.apps?.spotifyUrl || "https://open.spotify.com/show/"}
+                href={t?.apps?.spotifyUrl || "https://www.youtube.com/playlist?app=desktop&list=PLNccVrIVJ8qP2ACXgZOUSzLvhBWL-REbs"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${CARD_LIGHT} p-5 flex items-center justify-center gap-3 hover:bg-gray-50 transition outline-none focus-visible:ring-2 focus-visible:ring-gray-300`}
                 aria-label="Open on Spotify"
               >
-                <SpotifyIcon className="h-6 w-6 text-[#1DB954]" />
-                <span className="font-semibold text-gray-900">Spotify</span>
+                <YouTubeMusicIcon className="h-6 w-6 text-[#1DB954]" />
+                <span className="font-semibold text-gray-900">Youtube Music</span>
               </a>
               <a
-                href={t?.apps?.amazonUrl || "https://music.amazon.com/"}
+                href={t?.apps?.amazonUrl || "https://music.amazon.com/podcasts/5caa1c4a-442f-475c-b2b7-96587d0eecc2/further-records"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${CARD_LIGHT} p-5 flex items-center justify-center gap-3 hover:bg-gray-50 transition outline-none focus-visible:ring-2 focus-visible:ring-gray-300`}
@@ -399,7 +418,7 @@ export default function FurtherMediaPage({ messages }) {
                 </span>
               </a>
               <a
-                href={t?.apps?.appleUrl || "https://podcasts.apple.com/"}
+                href={t?.apps?.appleUrl || "https://podcasts.apple.com/es/podcast/further-records/id1771034234"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${CARD_LIGHT} p-5 flex items-center justify-center gap-3 hover:bg-gray-50 transition outline-none focus-visible:ring-2 focus-visible:ring-gray-300`}
@@ -501,7 +520,7 @@ export default function FurtherMediaPage({ messages }) {
                 <div className="relative pt-[177.77%]" />
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-b-[2rem]"
-                  src={tiktokEmbed}
+                  src="https://www.tiktok.com/@further_corporate"
                   title={t?.tiktok?.title || "Further Corporate on TikTok"}
                   frameBorder="0"
                   allow="encrypted-media; fullscreen; picture-in-picture"
@@ -520,20 +539,9 @@ export default function FurtherMediaPage({ messages }) {
                 <p className={`${SUB_LIGHT} mb-4`}>
                   {t?.tiktok?.body || "Follow us for more short-form practice."}
                 </p>
-                <a
-                  href={tiktokProfileUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-gray-200 hover:bg-gray-50 transition outline-none focus-visible:ring-2 focus-visible:ring-gray-300"
-                >
-                  {t?.tiktok?.cta || "Open TikTok profile"}
-                </a>
-              </div>
-            )}
-
-            <div className="text-center mt-6">
+                <div className="text-center mt-6">
               <a
-                href={tiktokProfileUrl}
+                href="https://www.tiktok.com/@further_corporate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition outline-none focus-visible:ring-2 focus-visible:ring-gray-300"
@@ -541,6 +549,10 @@ export default function FurtherMediaPage({ messages }) {
                 {t?.tiktok?.title || "Further Corporate on TikTok"}
               </a>
             </div>
+              </div>
+            )}
+
+            
           </div>
 
           {/* Sube a CTA final (azul Footer) */}

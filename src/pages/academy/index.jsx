@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import { useRouter } from "next/router";
 import { loadMessages } from "@/lib/i18n";
+import CarouselInfinitePause from "@/componentes/ui/CarrouselInfinitePause";
 
 /* ===== tokens (dark + light) ===== */
 /* Azul unificado con School:
@@ -211,7 +212,7 @@ export default function AcademyPage({ messages }) {
               >
                 <iframe
                   className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/5Peo-ivmupE?rel=0"
+                  src="https://www.youtube.com/embed/Q_mfg5gTuEE?list=TLGGVuln3dhLRjAyNzEwMjAyNQ"
                   title="Further Academy — Overview"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -230,33 +231,23 @@ export default function AcademyPage({ messages }) {
         {/* ===== BLOQUE CLARO (misma info, estilos light) ===== */}
        <section className="bg-white text-gray-900">
 
-          {/* TRUST */}
-          <div className={`${WRAP} py-12 sm:py-16`}>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="h-2 w-2 rounded-full bg-[#FF3816]" />
-              <p className="text-sm text-gray-500">
-                {t("academy.trust.title")}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 opacity-80">
-              {["accenture", "sap", "ey", "pwc", "google", "microsoft"].map(
-                (n) => (
-                  <div
-                    key={n}
-                    className="relative h-10 sm:h-12 grayscale opacity-80"
-                  >
-                    <Image
-                      src={`/images/logos/${n}.svg`}
-                      alt={`${n} logo`}
-                      fill
-                      sizes="120px"
-                      className="object-contain"
-                    />
-                  </div>
-                )
-              )}
-            </div>
-          </div>
+       {/* TRUST — carrusel infinito con pausa */}
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+  viewport={{ once: true, amount: 0.3 }}
+  className={`${WRAP} text-center overflow-hidden select-none py-16`}
+>
+  <p className="text-sm uppercase tracking-wider font-semibold text-gray-500 mb-10">
+    {t("academy.trust.title") || "Trusted by leading organizations"}
+  </p>
+
+  <CarouselInfinitePause />
+</motion.div>
+
+
+          
 
           {/* INTRO / FEATURES */}
           <div className={`${WRAP} py-10 sm:py-16`}>
@@ -295,7 +286,7 @@ export default function AcademyPage({ messages }) {
 
                 <div className="relative overflow-hidden rounded-2xl border border-gray-200">
                   <Image
-                    src="/images/academy/hero.jpg"
+                    src="/images/academy/portada.avif"
                     alt={t("academy.intro.imageAlt")}
                     width={1200}
                     height={700}
@@ -365,13 +356,13 @@ export default function AcademyPage({ messages }) {
                 </ul>
 
                 <div className="mt-5 flex flex-wrap items-center gap-3">
-                  <Link href="/academy/pitch-mastery" className={CTA_SOLID}>
+                  <Link href="https://academy.furthercorporate.com/all-courses/0TQTPo4jpzpjU4xo66Gp" className={CTA_SOLID}>
                     <span className={`${BRAND_GRAD} absolute inset-0`} />
                     <span className="relative">
                       {t("academy.featured.startCourse")}
                     </span>
                   </Link>
-                  <Link href="/academy/pitch-mastery" className={LINK_LIGHT}>
+                  <Link href="https://academy.furthercorporate.com/all-courses/0TQTPo4jpzpjU4xo66Gp" className={LINK_LIGHT}>
                     {t("academy.featured.goCourse")}
                   </Link>
                 </div>
@@ -408,13 +399,13 @@ export default function AcademyPage({ messages }) {
                 </div>
 
                 <div className="mt-6 flex items-center gap-3">
-                  <Link href="/academy/pitch-mastery" className={CTA_SOLID}>
+                  <Link href="https://academy.furthercorporate.com/all-courses/0TQTPo4jpzpjU4xo66Gp" className={CTA_SOLID}>
                     <span className={`${BRAND_GRAD} absolute inset-0`} />
                     <span className="relative">
                       {t("academy.featured.cta")}
                     </span>
                   </Link>
-                  <Link href="/academy/pitch-mastery" className={LINK_LIGHT}>
+                  <Link href="https://academy.furthercorporate.com/all-courses/0TQTPo4jpzpjU4xo66Gp" className={LINK_LIGHT}>
                     {t("academy.featured.view")}
                   </Link>
                 </div>
@@ -450,7 +441,7 @@ export default function AcademyPage({ messages }) {
               <article className={`${CARD_LIGHT} p-5 sm:p-6 flex flex-col`}>
                 <div className="relative h-40 rounded-xl overflow-hidden border border-gray-200">
                   <Image
-                    src="/images/academy/pitch.jpg"
+                    src="/images/academy/pitch.avif"
                     alt={t("academy.latest.items.pitch.alt")}
                     fill
                     sizes="420px"
@@ -488,13 +479,13 @@ export default function AcademyPage({ messages }) {
                 </div>
 
                 <div className="mt-4 flex gap-3">
-                  <Link href="/academy/pitch-mastery" className={CTA_SOLID}>
+                  <Link href="https://academy.furthercorporate.com/all-courses/0TQTPo4jpzpjU4xo66Gp" className={CTA_SOLID}>
                     <span className={`${BRAND_GRAD} absolute inset-0`} />
                     <span className="relative">
                       {t("academy.latest.items.pitch.view")}
                     </span>
                   </Link>
-                  <Link href="/academy/pitch-mastery" className={LINK_LIGHT}>
+                  <Link href="https://academy.furthercorporate.com/all-courses/0TQTPo4jpzpjU4xo66Gp" className={LINK_LIGHT}>
                     {t("academy.latest.items.pitch.go")}
                   </Link>
                 </div>
@@ -506,23 +497,77 @@ export default function AcademyPage({ messages }) {
             </div>
           </div>
 
-          {/* TESTIMONIALS */}
-          <div className={`${WRAP} py-12 sm:py-16`}>
-            <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">
-              {t("academy.testimonials.title")}
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {t("academy.testimonials.items", []).map((it, i) => (
-                <blockquote key={i} className={`${CARD_LIGHT} p-6`}>
-                  <p className="text-gray-800">“{it.quote}”</p>
-                  <footer className="mt-3 text-sm text-gray-500">
-                    <strong className="text-gray-800">{it.initials}</strong> ·{" "}
-                    {it.name} — {it.role}
-                  </footer>
-                </blockquote>
-              ))}
-            </div>
+         {/* TESTIMONIALS */}
+<section
+  id="testimonials"
+  className="relative py-20 lg:py-24 bg-gradient-to-b from-white via-gray-50 to-white text-gray-900 overflow-hidden"
+>
+  <div className={`${WRAP} relative z-10`}>
+    {/* Encabezado */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-12"
+    >
+      <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
+        {t("academy.testimonials.title")}
+      </h3>
+      <p className="text-gray-500 mt-3">
+        {t("academy.testimonials.subtitle")}
+      </p>
+    </motion.div>
+
+    {/* Carrusel */}
+    <motion.div
+      className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2 sm:px-0"
+      whileTap={{ cursor: "grabbing" }}
+    >
+      {t("academy.testimonials.items", []).map((it, i) => (
+        <motion.blockquote
+          key={i}
+          className="min-w-[90%] sm:min-w-[45%] lg:min-w-[30%] snap-center rounded-3xl border border-gray-200 bg-white shadow-lg hover:shadow-xl transition-all duration-500 p-8 relative"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: i * 0.1 }}
+        >
+          {/* Comillas decorativas */}
+          <div className="absolute top-6 left-6 text-[#FF3816]/20 text-6xl leading-none font-serif select-none">
+            “
           </div>
+
+          {/* Contenido */}
+          <p className="relative text-gray-800 text-base leading-relaxed mt-4">
+            {it.quote}
+          </p>
+
+          {/* Footer */}
+          <footer className="mt-6 flex items-center gap-4">
+            {it.image && (
+              <img
+                src={it.image}
+                alt={it.name}
+                className="h-10 w-10 rounded-full object-cover ring-2 ring-[#FF3816]/20"
+              />
+            )}
+            <div>
+              <strong className="text-gray-900 font-semibold block">
+                {it.name}
+              </strong>
+              <span className="text-gray-500 text-sm">{it.role}</span>
+            </div>
+          </footer>
+        </motion.blockquote>
+      ))}
+    </motion.div>
+  </div>
+
+  {/* Glow decorativo */}
+  <div className="absolute -bottom-10 left-1/3 w-72 h-72 bg-[radial-gradient(circle_at_center,rgba(238,114,3,0.15),transparent_70%)] blur-[100px]" />
+</section>
+
 
           {/* ---- Onda de regreso al oscuro (invertida) ---- */}
           <WaveToDark className="-mb-[1px]"/>

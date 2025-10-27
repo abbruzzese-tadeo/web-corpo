@@ -360,33 +360,48 @@
   }
 },
 
-  "school": {
+ "school": {
   "meta": {
-    "title": "Further School of Languages — Aprendé inglés desde 1997",
-    "description": "Clases presenciales y online para todas las edades. Preparación Cambridge y TOEFL. Enseñanza dinámica, docentes expertos y resultados medibles."
+    "title": "Further School of Languages — Aprendiendo inglés desde 1997",
+    "description": "Clases presenciales y online para todas las edades. Preparación para exámenes Cambridge y TOEFL."
   },
   "hero": {
     "title": "Further School of Languages:",
-    "subtitle": "Aprendiendo inglés desde 1997"
+    "subtitle": "Aprendiendo inglés desde 1997",
+    "badge": "Aprendé inglés con nosotros",
+    "imageSrc": "/images/bg-tefl.jpeg",
+    "imageAlt": "Aula de inglés"
+  },
+  "why": {
+    "title": "¿Por qué elegir Further?"
   },
   "sections": {
     "fun": {
       "title": "Aprender inglés de manera divertida",
-      "body": "En Further School, aprender inglés es una experiencia dinámica y entretenida. Nuestras clases integran juegos, proyectos y situaciones reales para que hables con naturalidad desde el primer día."
+      "body": "Nuestras clases son todo menos aburridas. Interactivas, dinámicas y llenas de creatividad."
     },
     "park": {
       "title": "Escuela de inglés en Parque Patricios",
-      "body": "Contamos con clases presenciales en Parque Patricios y modalidad online en vivo. Diseñamos programas para niños, adolescentes y adultos, con grupos reducidos y atención personalizada."
+      "body": "Further School of Languages brinda clases de inglés presenciales y online con un enfoque personalizado."
     },
     "culture": {
-      "body": "Creemos que el idioma es parte de la cultura. Por eso incorporamos música, cine, podcasts y materiales auténticos para acercarte al inglés real de cada día."
+      "kicker": "Nuestra metodología",
+      "title": "Cultura y comunicación real",
+      "highlight": "Contexto vivo",
+      "body": "Entendemos el idioma como parte de la cultura. Promovemos música, cine y conversación real.",
+      "points": [
+        "Enfoque conversacional",
+        "Proyectos reales",
+        "Feedback continuo",
+        "Música y cine como herramientas"
+      ]
     }
   },
   "exams": {
     "title": "Preparación para exámenes internacionales",
-    "expertIntro": "Somos especialistas en preparación para certificaciones internacionales de inglés:",
-    "cambridgeTitle": "Exámenes Cambridge",
-    "cambridge": ["Starters", "Movers", "Flyers", "KET (A2 Key)", "PET (B1 Preliminary)", "FCE (B2 First)", "CAE (C1 Advanced)", "CPE (C2 Proficiency)", "IELTS"],
+    "expertIntro": "Somos expertos en preparación para:",
+    "cambridgeTitle": "Exámenes de inglés de Cambridge",
+    "cambridge": ["FCE", "CAE", "CPE", "IELTS", "BEC", "BULATS"],
     "usTitle": "Exámenes de inglés estadounidense",
     "toefl": "TOEFL: Test of English as a Foreign Language"
   },
@@ -395,12 +410,17 @@
     "title": "Further School",
     "followLabel": "Seguir",
     "loadMore": "Cargar más",
-    "widgetCredit": "Widget de Instagram gratuito",
+    "widgetCredit": "Widget gratuito de Instagram Feed",
+    "ctaBody": "Enfocamos la frescura en nuestras clases, incorporando el juego, la espontaneidad y la naturalidad como herramientas fundamentales.",
     "cta": "Visitanos en Instagram",
-    "ctaBody": "Promovemos la frescura en el aprendizaje, incorporando el juego, la espontaneidad y la curiosidad como herramientas clave para desplegar el potencial de cada estudiante.",
     "href": "https://www.instagram.com/furtherlanguages/"
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros alumnos",
+    "subtitle": "Resultados reales, progreso medible."
   }
 },
+
 
   "furthermore": {
     "meta": {
@@ -423,34 +443,104 @@
       "href": "https://www.instagram.com/furtherlanguages/"
     }
   },
-  "tefl": {
+  
+ "tefl": {
   "meta": {
-    "title": "TEFL — Formación docente en la enseñanza del inglés",
-    "description": "Convertite en profesor/a de inglés con certificación internacional. Dictado en Buenos Aires, con prácticas reales y acompañamiento profesional de Further Corporate."
+    "title": "TEFL — Enseñanza del Inglés como Lengua Extranjera",
+    "description": "Convertite en profesor/a de inglés y trabajá en el exterior con Further Corporate."
   },
-  "hero": { 
-    "title": "TEFL:", 
-    "subtitle": "Teaching English as a Foreign Language" 
+  "hero": {
+    "badge": "Programa TEFL",
+    "title": "TEFL:",
+    "subtitle": "Enseñanza del Inglés como Lengua Extranjera",
+    "description": "Viajá por el mundo enseñando inglés. Viví y trabajá en Buenos Aires, una de las ciudades más hermosas de Sudamérica.",
+    "imageSrc": "/images/bg-tefl.jpeg",
+    "imageAlt": "Aula TEFL"
   },
+  "tracks": {
+    "title": "Áreas del Programa",
+    "items": [
+      {
+        "title": "Fundamentos Globales",
+        "body": "Teoría central TEFL, metodologías de enseñanza y manejo de aula para comenzar con confianza.",
+        "pill": "Base"
+      },
+      {
+        "title": "Evaluación y CEFR",
+        "body": "Diseñá evaluaciones alineadas al CEFR y medí el progreso real de tus alumnos.",
+        "pill": "Estándares"
+      },
+      {
+        "title": "Práctica y Entrega",
+        "body": "Micro-teaching, ciclos de feedback y práctica reflexiva para generar impacto real en el aula.",
+        "pill": "Práctica"
+      }
+    ]
+  },
+  "video": {
+  "heading": "Convertite en profesor/a de inglés",
+  "subheading": "y abrí tus fronteras laborales",
+  "lead": "¿Soñás con enseñar inglés y viajar por el mundo?",
+  "description": "Nuestro curso TEFL te brinda las herramientas necesarias para enseñar inglés a hablantes no nativos. Incluye prácticas docentes, metodología moderna y oportunidades laborales dentro de Further Corporate.",
+  "videoUrl": "https://www.youtube.com/embed/lS8_TU-yAr4"
+},
+
   "blocks": {
     "workAbroad": {
-      "title": "Convertite en profesor/a de inglés y abrí tus fronteras laborales",
-      "lead": "¿Soñás con enseñar inglés y viajar por el mundo?",
-      "body": "Nuestro curso TEFL te brinda las herramientas necesarias para enseñar inglés a hablantes no nativos. Incluye prácticas docentes, metodología moderna y oportunidades laborales dentro de Further Corporate.",
-      "logoAlt": "Logo TEFL by Further",
-      "logoSrc": "/images/tefl-logo.png"
+      "lead": "Un enfoque práctico en planificación, dictado y evaluación."
     },
     "cert": {
-      "title": "Certificate con el programa TEFL by Further.",
-      "body1": "Aprendé a planificar clases efectivas, evaluar el progreso y adaptar materiales a diferentes niveles. Al finalizar, podrás aplicar para formar parte de nuestro equipo docente.",
-      "body2": "El curso incluye observaciones reales, análisis de casos y estrategias para incorporar recursos audiovisuales y digitales en tus clases."
+      "title": "Certificación y Metodología",
+      "body1": "Dominá enfoques como Communicative Approach, TBL, PPP y prácticas de evaluación efectivas.",
+      "body2": "Aprendé a planificar clases dinámicas, gestionar grupos y medir resultados reales.",
+      "logos": [
+       
+      ]
     }
   },
-  "closing": {
-    "title": "Desarrollá tus habilidades docentes y dictá clases de inglés con TEFL by Further"
+  "steps": {
+    "title": "Cómo funciona",
+    "items": [
+      {
+        "title": "Diagnóstico y objetivos",
+        "body": "Analizamos tu nivel inicial y tus metas para personalizar el plan."
+      },
+      {
+        "title": "Entrenamiento y micro-teaching",
+        "body": "Talleres prácticos con feedback guiado y simulación real de clases."
+      },
+      {
+        "title": "Evaluación y próximos pasos",
+        "body": "Portafolio + revisión de desempeño con resultados concretos."
+      }
+    ]
   },
-  "media": { "videoId": "lS8_TU-yAr4" }
+  "faqs": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Necesito experiencia previa?",
+        "a": "No. Empezamos desde los fundamentos metodológicos y práctica guiada."
+      },
+      {
+        "q": "¿Es una certificación internacional?",
+        "a": "Sí. Nuestro programa sigue los estándares CEFR y te prepara para enseñar en todo el mundo."
+      },
+      {
+        "q": "¿Puedo trabajar al terminar?",
+        "a": "Sí. Los graduados pueden comenzar a enseñar en Further Corporate o instituciones asociadas."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para comenzar tu camino TEFL?",
+    "subtitle": "Unite a nuestra próxima certificación y empezá tu carrera docente.",
+    "button": "Postularme",
+    "href": "/contacto"
+  }
 },
+
+
 
 "furtherMedia": {
   "meta": {

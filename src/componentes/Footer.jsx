@@ -41,9 +41,9 @@ const defaultNav = {
 };
 
 const defaultSocial = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/", icon: FiLinkedin },
-  { label: "Instagram", href: "https://www.instagram.com/", icon: FiInstagram },
-  { label: "YouTube", href: "https://www.youtube.com/", icon: FiYoutube },
+  { label: "LinkedIn", href: "https://ar.linkedin.com/company/furthercorporate", icon: FiLinkedin },
+  { label: "Instagram", href: "https://www.instagram.com/furthercorporate/", icon: FiInstagram },
+  { label: "YouTube", href: "https://www.youtube.com/@furthercorporate", icon: FiYoutube },
 ];
 
 /* ----------------- Footer component ----------------- */
@@ -215,7 +215,34 @@ export default function Footer({
             </p>
 
             <form
-              onSubmit={handleSubmit}
+              onSubmit={async (e) => {
+                    e.preventDefault();
+                      const form = e.currentTarget; // 👈 más seguro
+  const email = form.email.value.trim(); // ya funciona
+                    if (!email) return alert("Por favor, ingresa un email válido.");
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          origin: "Newsletter", // 👈 aquí definís de dónde vino
+        }),
+      });
+
+      if (res.ok) {
+        alert("Gracias por suscribirte. Te contactaremos pronto.");
+        e.target.reset();
+      } else {
+        const data = await res.json();
+        alert(data.error || "Ocurrió un error al enviar el mail.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error enviando el formulario.");
+    }
+  }}
               className="mt-4"
               aria-describedby="newsletter-desc"
               noValidate

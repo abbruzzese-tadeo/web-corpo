@@ -108,6 +108,7 @@ export default function ContactPage({ messages }) {
     email: "",
     company: "",
     message: "",
+    origin: "",
     accept: false,
   });
   const [status, setStatus] = useState({ state: "idle", error: "" }); // idle | sending | success | error
@@ -152,11 +153,11 @@ export default function ContactPage({ messages }) {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, locale: t?.locale }),
+        body: JSON.stringify({ ...form, locale: t?.locale, origin: "Further Contact"}),
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus({ state: "success", error: "" });
-      setForm({ name: "", email: "", company: "", message: "", accept: false });
+      setForm({ name: "", email: "", company: "", origin: "", message: "", accept: false });
     } catch {
       setStatus({ state: "error", error: errorMsg });
     }
@@ -239,7 +240,7 @@ export default function ContactPage({ messages }) {
           </div>
 
           {/* Onda bajando a la sección blanca */}
-          <WaveDivider from="dark" height={78} flip />
+          <WaveDivider from="dark" height={80} flip />
         </section>
 
         {/* === CONTENIDO (blanco): Form + Sidebar === */}

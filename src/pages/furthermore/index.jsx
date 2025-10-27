@@ -382,7 +382,34 @@ export default function FurthermorePage({ messages }) {
                   </div>
                   <form
                     className="grid gap-3"
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={async (e) => {
+                    e.preventDefault();
+                      const form = e.currentTarget; // 👈 más seguro
+  const email = form.email.value.trim(); // ya funciona
+                    if (!email) return alert("Por favor, ingresa un email válido.");
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          origin: "Further More", // 👈 aquí definís de dónde vino
+        }),
+      });
+
+      if (res.ok) {
+        alert("Gracias por suscribirte. Te contactaremos pronto.");
+        e.target.reset();
+      } else {
+        const data = await res.json();
+        alert(data.error || "Ocurrió un error al enviar el mail.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error enviando el formulario.");
+    }
+  }}
                     aria-label="Quick contact form"
                   >
                     <label className="sr-only" htmlFor="email-furthermore">
@@ -390,6 +417,7 @@ export default function FurthermorePage({ messages }) {
                     </label>
                     <input
                       id="email-furthermore"
+                      name="email"
                       type="email"
                       required
                       placeholder={
